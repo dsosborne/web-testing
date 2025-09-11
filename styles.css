@@ -1,5 +1,7 @@
 body {
-  max-width: 400px;
-  margin: auto;
   font-family: sans-serif;
 }
+
+main {
+  max-width: 65ch;
+  margin: auto;
