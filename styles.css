@@ -1,5 +1,9 @@
+html {
+  font-size: 20px;
+}
 body {
-  font-family: sans-serif;
+  font-family: Georgia, serif;
+  line-height: 145%;
 }
 
 main {
