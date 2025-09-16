@@ -1,12 +1,13 @@
 html {
-  /* font-size: 20px; */
-}
-body {
-  /* font-family: Georgia, serif; */
-  /* line-height: 145%; */
+	font-size: 20px;
 }
 
 main {
-  /* max-width: 65ch; */
-  /* margin: auto; */
+	margin: auto;
+	max-width: 65ch;
+}
+
+
+code {
+	background-color: lightblue;
 }
