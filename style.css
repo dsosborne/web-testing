@@ -11,3 +11,7 @@ main {
 code {
 	background-color: lightblue;
 }
+
+pre {
+	overflow-x: auto;
+}
