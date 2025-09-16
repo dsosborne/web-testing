@@ -2,27 +2,33 @@
 
 <html lang="en-US">
 
-  <title>Web Testing Page</title>
+	<head>
 
-  <meta charset="UTF-8"/>
+		<title>Web Testing Page</title>
+
+		<meta charset="UTF-8"/>
   
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <meta name="description" content="Web Testing"/>
+		<meta name="description" content="Web Testing"/>
 
-  <meta name="keywords" content="HTML, CSS, JavaScript"/>
+		<meta name="keywords" content="HTML, CSS, JavaScript"/>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <meta name="author" content="Stuart Bourne"/>
+		<meta name="author" content="Stuart Bourne"/>
 
-  <meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
 
-  <link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="style.css">
+
+	</head>
 
   <body>
 
     <main>
+
+		<h1>Web Page Testing</h1>
 
       <h1>Heading 1 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h1>
 
@@ -40,50 +46,283 @@
 
       <p>This is another paragraph. I need to put more text here and stuff so that it takes up more space and wraps to new lines and junk. I hope it works and looks okay and junk.</p>
 
-      <hr>
+		<h2>Text Importance, Emphasis, and Meaning</h2>
+
+		<p>
+			When text needs to <em>stress emphasis</em> on a word or words, use the <code class="code-html-element">em</code> element in <abbr>HTML</abbr>. This is not simply a generic italics-styled word or phrase; it is to add stress. If text is intended to stand out from the rest of the paragraph, as if it were a different mood or voice, the <code class="code-html-element">i</code> element is more appropriate. Also, the <code class="code-html-element">em</code> element is not intended to convey importance; for that, the <code class="code-html-element">strong</code> element is more appropriate.
+		</p>
+
+		<p>
+			When text represents <strong>importance, seriousness, or urgency,</strong> the <code class="code-html-element">strong</code> element should be used. The <code class="code-html-element">strong</code> element can be use anywhere such as a heading, caption, or paragraph to distinguish text that is important. You can nest the <code class="code-html-element">strong</code> element with more inner text being even more important.
+		</p>
+
+		<p>
+			For text that represents <small>side commends such as small print</small>, use the <code class="code-html-element">small</code> element. This usually includes disclaimers, caveats, copyrights, term and conditions, etc. It can also be used for attribution as in satisfying a licence requirement. The <code class="code-html-element">small</code> element does not de-emphasize or lower the importance of text and it is only intended for short runs of text. For instance, in a terms and conditions page, the text is the main content so <code class="code-html-element">small</code> wouldn’t be appropriate. The <code class="code-html-element">small</code> element should not be used for subheadings; the <code class="code-html-element">hgroup</code> element is more appropriate for that.
+		</p>
+
+		<p>
+			For content that is <s>no longer accurate or relavant</s>, use the <code class="code-html-element">s</code> element. The <code class="code-html-element">s</code> element is not appropriate when indicating document edits; to mark a section of text as having been removed from a document, use the <code class="code-html-element">del</code> element.
+		</p>
+
+		<p>
+			When text represents an <i>alternate voice or mood</i>, use the <code class="code-html-element">i</code> element. This can be something like a taxonomic designation, technical term, idiomatic phrase from another language, transliteration, thought, or a ship name in Western texts. If the text needs to be stressed, use the <code class="code-html-element">em</code> element. If the text is very important, use the <code class="code-html-element">strong</code> element.
+		</p>
+
+		<p>
+			For text that requires <b>attention drawn</b> for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, use the <code class="code-html-element">b</code> element. It can be used for key words in a document abstract product names in a review, actionable words in interactive text-driven software, or an article lede. The <code class="code-html-element">b</code> element should be used as a last resort in case no other element meets the requirements.
+		</p>
+
+		<p>
+			For text that should be <mark>highlighted for reference purposes</mark>, due to its relevance in another context, use the <code class="code-html-element">mark</code> element. When used in a quotation or other block of text referred to from the prose, it indicates a highlight that was not originally present but which has been added to bring the reader’s attention to a part of the text that might not have been considered important by the original author when the block was originally written, but which is now under previously unexpected scrutiny. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its likely relevance to the user’s current activity.
+		</p>
+
+		<p>
+			For text with an <u>unarticulated, though explicitly rendered, non-textual annotation,</u> use the <code class="code-html-element">u</code> element. This could be for labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt. In most cases a different element should be used.
+		</p>
+
+		<h2>Horizontal Rules</h2>
+
+		<p>
+			The <code class="code-html-element">hr</code> element represents a paragraph-level thematic break, e.g., a scene change in a story, or a transition to another topic within a section of a reference book; alternatively, it represents a separator between a set of options of a <code class="code-html-element">select</code> element.
+		</p>
+
+		<p>
+			Below is a horizontal rule.
+		</p>
+
+		<hr>
+
+		<h2>Links</h2>
+
+		<p>
+			If your text is a hyperlink to another web location, use the <code class="code-html-element">a</code> element.
+		</p>
+
+		<p>
+			Let’s take a look at some example links. We may have <a href="#top">internal links</a> as well as <a href="https://www.fender.com/" target="_blank" class="link-external">external links</a> in our page.
+		</p>
+
+		<p>
+		What if we have a <a href="#top">link that is long or that just happens to wrap to a new line and stuff</a> and things and what not?
+		</p>
+
+		<h2>Lists</h2>
+
+		<p>
+			If you want an unordered (bulleted) list, use the <code class="code-html-element">ul</code> element. If you want an ordered (numbered) list, use the <code class="code-html-element">ol</code> element. Child elements for either list type are indicated with the <code class="code-html-element">li</code> element.
+		</p>
+
+		<p>
+			There are two ways that lists can be formatted. First, is using the built-in formatting for the <code class="code-html-element">ul</code> and <code class="code-html-element">ol</code> elements. This provides very functional lists but doesn’t allow for much formatting. If you need to customize the formats, you can use the <abbr title="Cascading Style Sheets">CSS</abbr> <code>::before</code> pseudo element.
+		</p>
+
+		<p>
+			The <code class="code-html-element">menu</code> element represents a toolbar consisting of its contents, in the form of an unordered list of items (represented by <code class="code-html-element">li</code> elements), each of which represents a command that the user can perform or activate.
+		</p>
+
+		<p>
+			The <code class="code-html-element">menu</code> element is simply a semantic alternative to <code class="code-html-element">ul</code> to express an unordered list of commands (a "toolbar").
+		</p>
+
+		<p>
+			Following is an unordered list.
+		</p>
+
+		<ul>
+			<li>This is a list item.</li>
+			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+			<li>This is a list item.
+				<ul>
+					<li>This is a list item.</li>
+					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+					<li>This is a list item.
+						<ul>
+							<li>This is a list item.</li>
+							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+							<li>This is a list item.
+								<ul>
+									<li>This is a list item.</li>
+									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+									<li>This is a list item.</li>
+									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+									<li>This is a list item.</li>
+								</ul>
+							</li>
+							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+							<li>This is a list item.</li>
+						</ul>
+					</li>
+					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+					<li>This is a list item.</li>
+				</ul>
+			</li>
+			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+			<li>This is a list item.</li>
+		</ul>
+
+		<p>
+			Following is an ordered.
+		</p>
+		
+		<ol>
+			<li>This is a list item.</li>
+			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+			<li>This is a list item.
+				<ol>
+					<li>This is a list item.</li>
+					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+					<li>This is a list item.
+						<ol>
+							<li>This is a list item.</li>
+							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+							<li>This is a list item.
+								<ol>
+									<li>This is a list item.</li>
+									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+									<li>This is a list item.</li>
+									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+									<li>This is a list item.</li>
+								</ol>
+							</li>
+							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+							<li>This is a list item.</li>
+						</ol>
+					</li>
+					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+					<li>This is a list item.</li>
+				</ol>
+			</li>
+			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
+			<li>This is a list item.</li>
+		</ol>
+
+		<h2>Definitions and Description Lists</h2>
+
+		<p>
+			When you have a <dfn>term</dfn> that is defined on a page, use the <code class="code-html-element">dfn</code> element. The paragraph, description list group, or section that is the nearest ancestor of the <code class="code-html-element">dfn</code> element must also contain the definition(s) for the term given by the <code class="code-html-element">dfn</code> element.
+		</p>
+
+		<p>
+			If you have a list of name-value groups (a description list), use the <code class="code-html-element">dl</code>, <code class="code-html-element">dt</code>, and <code class="code-html-element">dd</code> elements. The <code class="code-html-element">dl</code> element defines the list, the <code class="code-html-element">dt</code> element contains the name or term, and the <code class="code-html-element">dd</code> element contains the description, definition, or value of the name or term. The <code class="code-html-element">dt</code> element itself, when used in a <code class="code-html-element">dl</code> element, does not indicate that its contents are a term being defined, but this can be indicated using the <code class="code-html-element">dfn</code> element.
+		</p>
+
+		<p>
+			Below is an example of a description list used to show metadata.
+		</p>
+
+		<dl>
+			<dt>Item</dt>
+			<dd>My Web Page</dd>
+			<dt>Date Created</dt>
+			<dd><time datetime="2024-01-01 08:30"></time>January 1, 2024 8:30a.m.</dd>
+			<dt>Date Updated</dt>
+			<dd><time datetime="2024-01-18 13:30"></time>January 18, 2024 1:30p.m.</dd>
+			<dt>Authors</dt>
+			<dd>Jane Doe</dd>
+			<dd>John Doe</dd>
+			<dt>Keywords</dt>
+			<dd>Telecaster</dd>
+			<dd>Stratocaster</dd>
+			<dd>Les Paul</dd>
+		</dl>
+
+		<p>
+			Here is an example of a description list used with the <code class="code-html-element">dfn</code> element to create a definitions list.
+		</p>
+
+		<dl>
+			<dt><dfn>Hackneyed</dfn></dt>
+			<dd>Something is considered hackneyed when it is not interesting, funny, etc., because of being used too often; in other words, it’s neither fresh nor original.</dd>
+			<dt><dfn>Leitmotif</dfn></dt>
+			<dd>A leitmotif is a dominant recurring theme—something (such as a melody, an idea, or a phrase) repeated many times throughout a book, story, opera, etc.</dd>
+			<dt><dfn>Tome</dfn></dt>
+			<dd>Tome is a formal word for a book, and especially a very large, thick, often scholarly book.</dd>
+			<dt><dfn>Cerulean</dfn></dt>
+		<dd>Cerulean describes things whose blue color resembles the blue of a clear sky.</dd>
+		</dl>
+
+		<h2>Abbreviations, Acronyms, and Initialisms</h2>
+
+		<p>
+			When the text indicates an abbreviation, acronym, or an initialism, use the <code class="code-html-element">abbr</code> element. It can be used with the <code class="code-html-attribute">title</code> attribute to provide an expansion of the abbreviation.
+		</p>
+
+		<p>
+			To understand the differences between abbreviations, acronyms, and initialisms, see the definitions below.
+		</p>
+
+		<dl>
+			<dt><dfn>Abbreviation</dfn></dt>
+			<dd>An abbreviation is a shortened form of a word or phrase intended to speed up communication and/or use fewer symbols. An abbreviation by itself is a shortened form of a single word such as <em>vs.</em> (versus) or <em>dept.</em>(department). In addition to single-word abbreviations, there are two other types of abbreviations for compound terms: acronym and initialism.</dd>
+			<dt><dfn>Acronym</dfn></dt>
+			<dd>An acronym is a type of abbreviation made from the first letters or parts of a compound term and is read or spoken as a single word, not letter by letter. Examples are <em>awol</em> (absent without official leave), <em>radar</em> (radio detection and ranging), or <em>scuba</em> (self-contained underwater breating apparatus).</dd>
+			<dt><dfn>Initialism</dfn></dt>
+			<dd>An initialism is also a type of abbreviation made from the first letters or parts of a compound term, but it’s sounded letter by letter, not as one word. An example is <em>r.p.m.</em> (revolutions per minute).</dd>
+		</dl>
+
+		<p>
+			With uncommon abbreviations, it is best practice to spell out the full word or phrase and include the abbreviation in parenthesis the first time it is used. For example, CARPE may need an introduction as Committee on Academic Rights, Privileges, and Ethics but PTA may not need an introduction as most people understand it is Parent Teacher Association.
+		</p>
+
+		<p>
+			Don’t use abbreviations that have already been taken if possible. For example, in 1959, PMS stood for primary message systems but stands premenstrual syndrome today.
+		</p>
+
+		<p>
+			When choosing an indefinite article before an abbreviation, the choice between <em>a</em> and <em>an</em> depends on how the first syllable is sounded; a vowel sound takes an <em>an</em> and a consonant sound takes an <em>a</em>. So we get <em>an</em> SOS, <em>a</em> DVD player, and <em>a</em> UFO.
+		</p>
+
+		<p>
+			<strong>Periods after letters.</strong> There is no consistency whether to place a period after each letter in an acronym or initialism. The current trend is to omit periods. Acronyms are spoken as a single word so it may not make sense to include the periods (UNESCO). If an initialism is made up of lowercase letters, periods are often preferred (rpm or r.p.m.; am or a.m.). However, initialisms using capital letters (ABC, ATM, HIV, IRA, SRV, URL, etc.) tend not to have periods.
+		</p>
+
+		<p>
+			<strong>Capitalization.</strong> There is no consistency on capitalization. In American English, there is a tendency to print initialisms in all-caps (FMLA, NJDEP) and acronyms in small-caps (GAAP, MADD, NASA); but this is not a rule. However, some publications use all-caps for both. In British English, the tendency is to uppercase only the first letter (Ifor = Implementation Force; Isa = individual savings account).
+		</p>
+
+		<p>
+			<strong>Pluralization.</strong> The pluralization of an initialism or acronym is done by simply adding an <em>s</em> without an apostrophe (CEOs, FAQs, IPOs, PCs, PINs, POWs, etc.). This is consistent with the modern trend of simplicity. Another reason to do this is that sometimes an acronym or initialism is used as a possessive, in which case you use the apostrophe (the CEO’s schedule; NASA’s budget). There are some acronyms or abbreviations that pluralize the first word if spelled out; add an s to the end of the acronym or initialism for these (POW = prisoners of war; WMDs = weapons of mass destruction). If using all lowercase acronyms or initializations, you may need to use an apostrophe for pluralization to avoid confusion (gif’s or gifs). For abbreviations that are not acronyms or initialisms, add an s before the period (paras. = paragraphs; assocs. = associates). However, there are some standard abbreviations made by doubling a prominant letter (exx. = examples; MSS. = manuscripts; pp. = pages).
+		</p>
+
+		<p>
+			For the examles below, if you hover your mouse over the abbreviation, a definition should pop up.
+		</p>
+
+		<p>
+			For abbreviations that are not acronyms or initialisms, we will keep everything lowercase with a period at the end. Examples are <abbr title="versus">vs.</abbr> and <abbr title="department">dept.</abbr>
+		</p>
+
+		<p>
+			With acronyms, we will use small-caps. Examples are <abbr class="acronym" title="American Standard Code for Information Interchange">ASCII</abbr>, <abbr class="acronym" title="Local Area Network">LAN</abbr>, and <abbr class="acronym" title="American National Standards Institute">ANSI</abbr>.
+		</p>
+
+		<p>
+			For initialisms, we will use all-caps. Examples are <abbr class="initialism" title="HyperText Markup Language">HTML</abbr>, <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr>, and <abbr class="initialism" title="United States of America">USA</abbr>.
+		</p>
+
+
+
+
+
+
+		
+		
+
+
+
+
+
+
+
+		<h2>Older Stuffssss....</h2>
+
+
 
       <pre>This is some preformatted text and stuff - need a better test.</pre>
 
       <blockquote>This is a blockquote that is a quote from something and stuff and things and junk and what not.</blockquote>
 
-      <ol>
-        <li>List item</li>
-        <li>List item
-          <ol>
-            <li>nested list item</li>
-            <li>nested list item</li>
-          </ol>
-        </li>
-        <li>List item</li>
-        <li>List item</li>
-      </ol>
 
-      <ul>
-        <li>List item</li>
-        <li>List item
-          <ul>
-            <li>nested list item</li>
-            <li>nested list item</li>
-          </ul>
-        </li>
-        <li>List item</li>
-        <li>List item</li>
-      </ul>
-
-      <dl>
-        <dt>The Term</dt>
-        <dd>This is the definition of the term and stuff and junk and things. It could be quite long and wrap around to a new line and stuff.</dd>
-        <dt>The Term</dt>
-        <dd>This is the definition of the term and stuff and junk and things. It could be quite long and wrap around to a new line and stuff.</dd>
-        <dt>The Term</dt>
-        <dd>This is the definition of the term and stuff and junk and things. It could be quite long and wrap around to a new line and stuff.</dd>
-        <dt>The Term</dt>
-        <dd>This is the definition of the term and stuff and junk and things. It could be quite long and wrap around to a new line and stuff.</dd>
-      </dl>
-
-      <p>This ia a paragraph with a <a href="#">pretty amazing link</a> in it and stuff.</p>
-
-      <p>Here is something that <em>should be emphasized</em> and something that is <strong>quite strong</strong> and junk.</p>
       
     </main>
  
