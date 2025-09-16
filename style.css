@@ -1,0 +1,13 @@
+html {
+	font-size: 20px;
+}
+
+main {
+	margin: auto;
+	max-width: 65ch;
+}
+
+
+code {
+	background-color: lightblue;
+}
