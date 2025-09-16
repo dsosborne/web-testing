@@ -300,13 +300,304 @@
 			For initialisms, we will use all-caps. Examples are <abbr class="initialism" title="HyperText Markup Language">HTML</abbr>, <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr>, and <abbr class="initialism" title="United States of America">USA</abbr>.
 		</p>
 
+		<h2>Quotes and Blockquotes</h2>
+
+		<p>
+			When you have text that is some <q>phrasing content from another source</q>, you can use the <code class="code-html-element">q</code> element. Quotation marks should not be used directly in the quote because the <code class="code-html-element">q</code> element should automatically add the appropriate quotation marks. Sometimes you have <q>quotation marks <q>within</q> quotation marks.</q> Again, the q element (along with some CSS) will automatically take care of this.
+		</p>
+
+		<p class="notes-todo">
+			Make some notes about quotation marks. Use Garner’s Modern English Usage. Discuss AmE vs BrE.
+		</p>
+
+		<p>
+			If the quoted content has a <abbr>URL</abbr> address, it can be added to the <code class="code-html-attribute">cite</code> attribute within the <code class="code-html-element">q</code> element.
+		</p>
+
+		<p>
+			The <code class="code-html-element">q</code> element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the <code class="code-html-element">q</code> element for marking up sarcastic statements.
+		</p>
+
+		<p>
+			As an example using the <code class="code-html-element">q</code> element, according to Matthew Butterick, <q cite="https://practicaltypography.com/what-is-typography.html"><dfn>typography</dfn> is the visual component of the written word.</q>
+		</p>
+
+		<p>
+			If you have a section of text that is a quote from another source, you can use the <code class="code-html-element">blockquote</code> element.
+		</p>
+
+		<p>
+			As with the <code class="code-html-element">q</code> element, if the quoted content has a <abbr>URL</abbr> address, it can be added to the <code class="code-html-attribute">cite</code> attribute within the <code class="code-html-element">blockquote</code> element.
+		</p>
+
+		<p>
+			Attribution for the quotation, if any, must be placed outside the <code class="code-html-element">blockquote</code> element.
+		</p>
+
+		<p>
+			You may want to consider using the <code class="code-html-element">blockquote</code> element inside of a <code class="code-html-element">figure</code> element.
+		</p>
+
+		<p>
+			Here is an example of a blockquote.
+		</p>
+
+		<blockquote cite="https://practicaltypography.com/what-is-good-typography.html">
+			<p>
+				Good typography is measured by how well it reinforces the meaning of the text, not by some abstract scale of merit. Typographic choices that work for one text won’t necessarily work for another. Corollary: good typographers don’t rely on rote solutions. One size never fits all.
+			</p>
+		</blockquote>
+		<p>
+			— Matthew Butterick
+		</p>
+
+		<h2>Citations</h2>
+
+		<p>
+			For the title of a work (book, paper, essay, poem, song, script, film, TV show, etc.), such as the book <cite>Dracula</cite> use the <code class="code-html-element">cite</code> element. This can be a work that is being quoted or referenced in detail (i.e., a citation), or it can just be a work that is mentioned in passing.
+		</p>
+
+		<p>
+			A person’s name is not the title of a work — even if people call that person a piece of work — and the element must therefore not be used to mark up people’s names. (In some cases, the <code class="code-html-element">b</code> element might be appropriate for names; e.g. in a gossip article where the names of famous people are keywords rendered with a different style to draw attention to them. In other cases, if an element is really needed, the <code class="code-html-element">span</code> element can be used.)
+		</p>
+
+		<p>
+			A citation is not a quote (for which the <code class="code-html-element">q</code> element is appropriate).
+		</p>
+
+		<p class="notes-todo">
+			How to deal with addresses? Or author names, etc.? ? ? ? ?
+		</p>
+
+		<h2>Preformatted Text</h2>
+
+		<p>
+			If you have text that is preformatted or has a specific struction represented by typographic conventions rather than by element, use the <code class="code-html-element">pre</code> element. This could be used for displaying <abbr>ASCII</abbr> art, poems with specific layouts, or computer code.
+		</p>
+
+		<p>
+		To represent a block of computer code, the <code class="code-html-element">pre</code> element can be used with a <code class="code-html-element">code</code> element; to represent a block of computer output the <code class="code-html-element">pre</code> element can be used with a <code class="code-html-element">samp</code> element. Similarly, the <code class="code-html-element">kbd</code> element can be used within a <code class="code-html-element">pre</code> element to indicate text that the user is to enter.
+		</p>
+
+		<p>
+			Below is a <code class="code-html-element">pre</code> test.
+		</p>
+
+<pre>
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</pre>
+
+		<p>
+			Below is another example.
+		</p>
+
+<pre>
+  ._,-,_.        _    ________    _       ______    __
+  ||| |||       / \  |__    __|  / \     |   _  \  |  |
+  ||| |||      / . \    |  |    / . \    |  |_) /  |  |
+  ;|| ||:     / /_\ \   |  |   / /_\ \   |     (   |  |
+./ /| |\ \.  /  ___  \  |  |  /  ___  \  |  |\  \  |  |
+|./ :_: \.| /__/   \__\ |__| /__/   \__\ |__| \__\ |__|</pre>
+
+		<h2>Code</h2>
+
+		<p>
+			If you have a fragment of computer code, use the <code class="code-html-element">code</code> element. This could be an XML element name, a filename, a computer program, or any other string that a computer would recognize.
+		</p>
+
+		<p>
+			There is no formal way to indicate the language of computer code being marked up. Authors who wish to mark <code class="code-html-element">code</code> elements with the language used, e.g. so that syntax highlighting scripts can use the right rules, can use the class attribute, e.g. by adding a class prefixed with "language-" to the element.
+		</p>
+
+		<p>
+			The <code class="code-html-element">code</code> element can also be used in conjunction with the <code class="code-html-element">pre</code> element.
+		</p>
+
+		<p>
+			Following is a computer code example.
+		</p>
+
+<pre><code class="code-block">function testIfTrue(b) {
+if (b){
+    return “It is true!”;
+}
+return “It is false.”;
+}
+console.log(testIfTrue(true));</code></pre>
+
+		<h2>Computer Output</h2>
+
+		<p>
+			If you have a sample or quoted output from another program or computing system, use the <code class="code-html-element">samp</code> element.
+		</p>
+
+		<p>
+			This element can be contrasted with the <code class="code-html-element">output</code> element, which can be used to provide immediate output in a web application.
+		</p>
+
+		<p>
+			You may want to also review the usage of the <code class="code-html-element">pre</code>, <code class="code-html-element">kbd</code>, and <code class="code-html-element">code</code> elements.
+		</p>
+
+		<p>
+			You can have inline computer output such as, the computer said <samp>Select paper type in Tray 2.</samp> You can also have a block of sample output like below.
+		</p>
+
+<pre><samp>Last login: Tue Apr 12 09:10:17 2005 from mowmow.example.com on pts/1
+Linux demo 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189 #1 SMP Tue Feb 1 11:22:36 PST 2005 i686 unknown</samp></pre>
+
+		<h2>Computer Keystrokes</h2>
+
+		<p>
+			In order to represent user input, use the <code class="code-html-element">kbd</code> element. This is usually for keyboard input, although it may also be used to represent other input, such as voice commands.
+		</p>
+
+		<p>
+			When the <code class="code-html-element">kbd</code> element is nested inside a <code class="code-html-element">samp</code> element, it represents the input as it was echoed by the system.
+		</p>
+
+		<p>
+			When the <code class="code-html-element">kbd</code> element contains a <code class="code-html-element">samp</code> element, it represents input based on system output, for example invoking a menu item.
+		</p>
+
+		<p>
+			When the <code class="code-html-element">kbd</code> element is nested inside another <code class="code-html-element">kbd</code> element, it represents an actual key or other single unit of input as appropriate for the input mechanism.
+		</p>
+
+		<p>
+			An actual keystroke example would be: press &nbsp;<kbd><kbd>command</kbd> + <kbd>C</kbd></kbd>&nbsp; to copy. Now let’s press the &nbsp;<kbd><kbd>option</kbd></kbd>&nbsp; key. And now, we press the &nbsp;<kbd><kbd>control</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>shift</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>tab</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>backspace</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>delete</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>esc</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>caps lock</kbd></kbd>&nbsp; key.
+		</p>
+
+		<p>
+			List of some keystroke examples:
+		</p>
+
+ 		<ul>
+			<li><kbd><kbd>control</kbd></kbd></li>
+			<li><kbd><kbd>option</kbd></kbd></li>
+			<li><kbd><kbd>command</kbd></kbd></li>
+			<li><kbd><kbd>shift</kbd></kbd></li>
+			<li><kbd><kbd>caps lock</kbd></kbd></li>
+			<li><kbd><kbd>tab</kbd></kbd></li>
+			<li><kbd><kbd>esc</kbd></kbd></li>
+			<li><kbd><kbd>backspace</kbd></kbd></li>
+			<li><kbd><kbd>delete</kbd></kbd></li>
+			<li><kbd><kbd>return</kbd></kbd></li>
+			<li><kbd><kbd>space</kbd></kbd></li>
+		</ul>
+
+		<h2>Mathematical or Coding Variables</h2>
+
+		<p>
+			In order to represent a mathematical or coding variable, you can use the <code class="code-html-element">var</code> element. This could be an actual variable in a mathematical expression or programming context, an identifier representing a constant, a symbol identifying a physical quantity, a function parameter, or just be a term used as a placeholder in prose.
+		</p>
+
+		<p>
+			For mathematics, in particular for anything beyond the simplest of expressions, MathML is more appropriate. However, the <code class="code-html-element">var</code> element can still be used to refer to specific variables that are then mentioned in MathML expressions.
+		</p>
+
+		<p>
+			As an example, <var>E</var> represents potential difference in the equation.
+		</p>
+
+		<h2>Time and Date</h2>
+
+		<p>
+			To represent a time and/or date, use the <code class="code-html-element">time</code> element. You can use the <code class="code-html-attribute">datetime</code> attribute to provide a machine-readable date and time which can be a local or global time.
+		</p>
+
+		<p>
+			For example, this web page was created on <time datetime="2024-01-18 15:30"> January 18, 2024 at 3:30<abbr class="abbr-am-pm" title="post meridiem">pm</abbr></time> by the author. We may need to write the date with lining numerals, so we can do this: <time datetime="2024-01-18 15:30" class="nums-lnum-pnum"> January 18, 2024 at 3:30<abbr class="abbr-am-pm" title="post meridiem">pm</abbr></time>
+		</p>
+
+		<h2>Data</h2>
+
+		<p>
+			If you have data, you can represent it using the <code class="code-html-element">data</code> element. The <code class="code-html-attribute">value</code> attribute must be used to contain the machine-readable value of the data.
+		</p>
+
+		<p>
+			The <code class="code-html-element">data</code> element can be used for several purposes.
+		</p>
+
+		<p>
+			When combined with microformats or the microdata attributes defined in this specification, the element serves to provide both a machine-readable value for the purposes of data processors, and a human-readable value for the purposes of rendering in a web browser. In this case, the format to be used in the <code class="code-html-attribute">value</code> attribute is determined by the microformats or microdata vocabulary in use.
+		</p>
+
+		<p>
+			The element can also, however, be used in conjunction with scripts in the page, for when a script has a literal value to store alongside a human-readable value. In such cases, the format to be used depends only on the needs of the script. (The <code class="code-html-attribute">data-*</code> attributes can also be useful in such situations.)
+		</p>
+
+		<p>
+			For example, the name of the file is <data value="spreadsheet.xlsx">spreadsheet.xlsx</data>.
+		</p>
+
+		<h2>Subscripts/Inferiors and Superscripts/Superiors</h2>
+
+		<p>
+		To represent a subscript use the <code class="code-html-element">sub</code> element. To represent a superscript, use the <code class="code-html-element">sup</code> element.
+		</p>
+
+		<p>
+			These elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation for presentation’s sake. For example, it would be inappropriate for the <code class="code-html-element">sub</code> and <code class="code-html-element">sup</code> elements to be used in the name of the LaTeX document preparation system. In general, authors should use these elements only if the absence of those elements would change the meaning of the content.
+		</p>
+
+		<p>
+			The <code class="code-html-element">sub</code> element can be used inside a <code class="code-html-element">var</code> element, for variables that have subscripts.
+		</p>
+
+		<p>
+			Mathematical expressions often use subscripts and superscripts. Authors are encouraged to use MathML for marking up mathematics, but authors may opt to use <code class="code-html-element">sub</code> and <code class="code-html-element">sup</code> if detailed mathematical markup is not desired.
+		</p>
+
+		<p>
+			On thing to note is that the <code class="code-html-element">sub</code> and <code class="code-html-element">sup</code> elements simply shrink the size of the default font and either lower or raise its position. It is best to use a font that includes built-in subscripts and superscripts using the Opentype <code>subs</code> and <code>sups</code> features.
+		</p>
+
+		<p>
+			In addition to the Opentype <code>subs</code> and <code>sups</code> features, Opentype also specifies a <code>sinf</code> feature for scientific inferiors. Here are the definitions of each feature according to the official Opentype standard.
+		</p>
+
+		<dl>
+			<dt><dfn>subs</dfn></dt>
+			<dd>The <code>subs</code> feature is used to present subscript forms.</dd>
+			<dd>An older definition is: The <code>subs</code> feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.</dd> 
+			<dt><dfn>sups</dfn></dt>
+			<dd>Replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).</dd>
+			<dt><dfn>sinf</dfn></dt>
+			<dd>Replaces lining or oldstyle figures (digits) with inferior figures (smaller glyphs which sit lower than the standard baseline, primarily for chemical or mathematical notation). May also replace glyphs for lowercase characters with alphabetic inferiors.</dd>
+		</dl>
+
+		<p>
+			It’s challenging to determine the intended difference between the <code>subs</code> and <code>sinf</code> features. However, on the Glyphs app website, the provide a bit more direction. One difference is that <code>subs</code> is a change of semantic value and <code>sinf</code> does not allow a semantic change. In many fonts, the <code>subs</code> and <code>sinf</code> figures are identical; however, some will lower the position of <code>sinf</code> figures to accommodate chemical and mathematical writing a bit better.
+		</p>
+
+		<p>
+			A few examples are:
+		</p>
+
+		<ul>
+			<li><code class="code-html-element">sub</code> element using the Opentype <code>subs</code> feature: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></li>
+			<li><code class="code-html-element">sub</code> element using the Opentype <code>sinf</code> feature: C<sub class="sinf-test1">6</sub>H<sub class="sinf-test1">12</sub>O<sub class="sinf-test1">6</sub></li>
+			<li><code class="code-html-element">sup</code> element using the Opentype <code>sups</code> feature: <var>x</var><sup>6</sup>; or BIG<sup>50</sup></li>
+		</ul>
+
+		<h2>Document Edits</h2>
+
+		<p>
+			The <code class="code-html-element">ins</code> element represents an addition to the document. Maybe we <ins>missed a few words and</ins> need to edit a document.
+		</p>
+
+		<p>
+			The <code class="code-html-element">del</code> element represents a removal from the document. Maybe we <del>added too many words and</del> need to edit a document.
+		</p>
 
 
 
 
 
-		
-		
 
 
 
@@ -314,16 +605,13 @@
 
 
 
-		<h2>Older Stuffssss....</h2>
 
 
 
-      <pre>This is some preformatted text and stuff - need a better test.</pre>
-
-      <blockquote>This is a blockquote that is a quote from something and stuff and things and junk and what not.</blockquote>
 
 
-      
+
+
     </main>
  
   </body>
