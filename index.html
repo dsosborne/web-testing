@@ -29,18 +29,263 @@
     <main>
 
 		<h1>Web Page Testing</h1>
+		
+		<h2>Types of Content</h2>
+		
+		<p>
+			HTML elements fall into zero or more content types. These types are:
+		</p>
+		
+		<ul>
+			<li>Metadata content</li>
+			<li>Flow content</li>
+			<li>Sectioning content</li>
+			<li>Heading content</li>
+			<li>Phrasing content</li>
+			<li>Embedded content</li>
+			<li>Interactive content</li>
+		</ul>
+		
+		<h3>Metadata Content</h3>
+		
+		<p>
+			Metadata content is content that sets up the presentation or behavior of the rest of the content. It also sets up the relationship of the document with other documents. Below is a list of elements that are metadata content.
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">base</code></li>
+			<li><code class="code-html-element">link</code></li>
+			<li><code class="code-html-element">meta</code></li>
+			<li><code class="code-html-element">noscript</code></li>
+			<li><code class="code-html-element">script</code></li>
+			<li><code class="code-html-element">style</code></li>
+			<li><code class="code-html-element">template</code></li>
+			<li><code class="code-html-element">title</code></li>
+		</ul>
+		
+		<h3>Flow Content</h3>
+		
+		<p>
+			Flow content is a broad catetory that includes most elements that can go inside the <code class="code-html-element">body</code> element. This includes elements from many other types of content. Below is a list of elements that are flow content.
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">a</code></li>
+			<li><code class="code-html-element">abbr</code></li>
+			<li><code class="code-html-element">address</code></li>
+			<li><code class="code-html-element">area</code> (if it is a descendant of a <code class="code-html-element">map</code> element)</li>
+			<li><code class="code-html-element">article</code></li>
+			<li><code class="code-html-element">aside</code></li>
+			<li><code class="code-html-element">audio</code></li>
+			<li><code class="code-html-element">b</code></li>
+			<li><code class="code-html-element">bdi</code></li>
+			<li><code class="code-html-element">bdo</code></li>
+			<li><code class="code-html-element">blockquote</code></li>
+			<li><code class="code-html-element">br</code></li>
+			<li><code class="code-html-element">button</code></li>
+			<li><code class="code-html-element">canvas</code></li>
+			<li><code class="code-html-element">cite</code></li>
+			<li><code class="code-html-element">code</code></li>
+			<li><code class="code-html-element">data</code></li>
+			<li><code class="code-html-element">datalist</code></li>
+			<li><code class="code-html-element">del</code></li>
+			<li><code class="code-html-element">details</code></li>
+			<li><code class="code-html-element">dfn</code></li>
+			<li><code class="code-html-element">dialog</code></li>
+			<li><code class="code-html-element">div</code></li>
+			<li><code class="code-html-element">dl</code></li>
+			<li><code class="code-html-element">em</code></li>
+			<li><code class="code-html-element">embed</code></li>
+			<li><code class="code-html-element">fieldset</code></li>
+			<li><code class="code-html-element">figure</code></li>
+			<li><code class="code-html-element">footer</code></li>
+			<li><code class="code-html-element">form</code></li>
+			<li><code class="code-html-element">h1</code></li>
+			<li><code class="code-html-element">h2</code></li>
+			<li><code class="code-html-element">h3</code></li>
+			<li><code class="code-html-element">h4</code></li>
+			<li><code class="code-html-element">h5</code></li>
+			<li><code class="code-html-element">h6</code></li>
+			<li><code class="code-html-element">header</code></li>
+			<li><code class="code-html-element">hgroup</code></li>
+			<li><code class="code-html-element">hr</code></li>
+			<li><code class="code-html-element">i</code></li>
+			<li><code class="code-html-element">iframe</code></li>
+			<li><code class="code-html-element">img</code></li>
+			<li><code class="code-html-element">input</code></li>
+			<li><code class="code-html-element">ins</code></li>
+			<li><code class="code-html-element">kbd</code></li>
+			<li><code class="code-html-element">label</code></li>
+			<li><code class="code-html-element">link</code> (if it is allowed in the body)</li>
+			<li><code class="code-html-element">main</code> (if it is a hierarchically correct <code class="code-html-element">main</code> element)</li>
+			<li><code class="code-html-element">map</code></li>
+			<li><code class="code-html-element">mark</code></li>
+			<li><code class="code-html-element">math</code></li>
+			<li><code class="code-html-element">menu</code></li>
+			<li><code class="code-html-element">meta</code> (if the <code class="code-html-attribute">itemprop</code> attribute is present)</li>
+			<li><code class="code-html-element">meter</code></li>
+			<li><code class="code-html-element">nav</code></li>
+			<li><code class="code-html-element">noscript</code></li>
+			<li><code class="code-html-element">object</code></li>
+			<li><code class="code-html-element">ol</code></li>
+			<li><code class="code-html-element">output</code></li>
+			<li><code class="code-html-element">p</code></li>
+			<li><code class="code-html-element">picture</code></li>
+			<li><code class="code-html-element">pre</code></li>
+			<li><code class="code-html-element">progress</code></li>
+			<li><code class="code-html-element">q</code></li>
+			<li><code class="code-html-element">ruby</code></li>
+			<li><code class="code-html-element">s</code></li>
+			<li><code class="code-html-element">samp</code></li>
+			<li><code class="code-html-element">script</code></li>
+			<li><code class="code-html-element">search</code></li>
+			<li><code class="code-html-element">section</code></li>
+			<li><code class="code-html-element">select</code></li>
+			<li><code class="code-html-element">slot</code></li>
+			<li><code class="code-html-element">small</code></li>
+			<li><code class="code-html-element">span</code></li>
+			<li><code class="code-html-element">strong</code></li>
+			<li><code class="code-html-element">sub</code></li>
+			<li><code class="code-html-element">sup</code></li>
+			<li><code class="code-html-element">svg</code></li>
+			<li><code class="code-html-element">table</code></li>
+			<li><code class="code-html-element">template</code></li>
+			<li><code class="code-html-element">textarea</code></li>
+			<li><code class="code-html-element">time</code></li>
+			<li><code class="code-html-element">u</code></li>
+			<li><code class="code-html-element">ul</code></li>
+			<li><code class="code-html-element">var</code></li>
+			<li><code class="code-html-element">video</code></li>
+			<li><code class="code-html-element">wbr</code></li>
+			<li>automonous custom elements</li>
+			<li>text</li>
+		</ul>
+		
+		<h3>Sectioning Content</h3>
+		
+		<p>
+			Sectioning content is a subset of flow content and creates a section in the current outline that defines the scope of the <code class="code-html-element">header</code> and <code class="code-html-element">footer</code> elements. Below is a list of elements that are sectioning content.
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">article</code></li>
+			<li><code class="code-html-element">aside</code></li>
+			<li><code class="code-html-element">nav</code></li>
+			<li><code class="code-html-element">section</code></li>
+		</ul>
+		
+		<h3>Heading Content</h3>
+		
+		<p>
+			Heading content is is a subset of flow content that defines the heading or title of a section. This applies to sections marked by an explicit sectioning content element as well as to sections implicitly defined by the heading content itself.
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">h1</code></li>
+			<li><code class="code-html-element">h2</code></li>
+			<li><code class="code-html-element">h3</code></li>
+			<li><code class="code-html-element">h4</code></li>
+			<li><code class="code-html-element">h5</code></li>
+			<li><code class="code-html-element">h6</code></li>
+			<li><code class="code-html-element">hgroup</code></li>
+		</ul>
+		
+		<p>
+			The <code class="code-html-element">header</code> element is not heading content itself although it is likely to contain heading content.
+		</p>
+		
+		<h3>Phrasing Content</h3>
+		
+		<p>
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">xxx</code></li>
+		</ul>
+		
+		<h3>Embedded Content</h3>
+		
+		<p>
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">xxx</code></li>
+		</ul>
+		
+		<h3>Interactive Content</h3>
+		
+		<p>
+		</p>
+		
+		<ul>
+			<li><code class="code-html-element">xxx</code></li>
+		</ul>
+		
+		<h2>Headings, Headers, and Footers</h2>
 
-      <h1>Heading 1 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h1>
+		<p>
+			The <code class="code-html-element">h1</code>, <code class="code-html-element">h2</code>, <code class="code-html-element">h3</code>, <code class="code-html-element">h4</code>, <code class="code-html-element">h5</code>, and <code class="code-html-element">h6</code> elements represent headings for their sections. The semantics and meaning of these elements are defined in the section on headings and outlines. These elements have a heading level given by the number in their name. The heading level corresponds to the levels of nested sections. The <code class="code-html-element">h1</code> element is for a top-level section, <code class="code-html-element">h2</code> for a subsection, <code class="code-html-element">h3</code> for a sub-subsection, and so on.
+		</p>
 
-      <h2>Heading 2 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h2>
+		<p>
+		The <code class="code-html-element">hgroup</code> element represents a heading and related content. The element may be used to group an <code class="code-html-element">h1</code>–<code class="code-html-element">h6</code> element with one or more <code class="code-html-element">p</code> elements containing content representing a subheading, alternative title, or tagline.
+		</p>
 
-      <h3>Heading 3 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h3>
+		<p>
+			The <code class="code-html-element">header</code> element represents a group of introductory or navigational aids. A <code class="code-html-element">header</code> element is intended to usually contain a heading (an <code class="code-html-element">h1</code>–<code class="code-html-element">h6</code> element or an <code class="code-html-element">hgroup</code> element), but this is not required. The header <code class="code-html-element">header</code> can also be used to wrap a section’s table of contents, a search form, or any relevant logos.
+		</p>
 
-      <h4>Heading 4 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h4>
+		<p>
+			The <code class="code-html-element">footer</code> element represents a footer for its nearest ancestor sectioning content element, or for the body element if there is no such ancestor. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+		</p>
 
-      <h5>Heading 5 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h5>
+		<p>
+			When the <code class="code-html-element">footer</code> element contains entire sections, they represent appendices, indices, long colophons, verbose license agreements, and other such content.
+		</p>
 
-      <h6>Heading 6 - This is a long line to test text wrapping for headings and stuff; it might just keep on going for a while</h6>
+		<p>
+			Contact information for the author or editor of a section belongs in an <code class="code-html-element">address</code> element, possibly itself inside a <code class="code-html-element">footer</code>. Bylines and other information that could be suitable for both a <code class="code-html-element">header</code> or a <code class="code-html-element">footer</code> can be placed in either (or neither). The primary purpose of these elements is merely to help the author write self-explanatory markup that is easy to maintain and style; they are not intended to impose specific structures on authors.
+		</p>
+
+		<p>
+			Footers don’t necessarily have to appear at the end of a section, though they usually do. When there is no ancestor sectioning content element, then it applies to the whole page.
+		</p>
+
+		<p>
+			The <code class="code-html-element">footer</code> element is not itself sectioning content; it doesn’t introduce a new section.
+		</p>
+
+		<p>
+			The <code class="code-html-element">address</code> element represents the contact information for its nearest <code class="code-html-element">article</code> or <code class="code-html-element">body</code> element ancestor. If that is the <code class="code-html-element">body</code> element, then the contact information applies to the document as a whole.
+		</p>
+
+		<p>
+			The <code class="code-html-element">address</code> element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The <code class="code-html-element">p</code> element is the appropriate element for marking up postal addresses in general.)
+		</p>
+
+		<p>
+			The <code class="code-html-element">address</code> element must not contain information other than contact information.
+		</p>
+
+		<p>
+			Typically, the <code class="code-html-element">address</code> element would be included along with other information in a <code class="code-html-element">footer</code> element.
+		</p>
+		
+		<p>
+			Following is a test of the 6 heading levels.
+		</p>
+
+      <h1>Heading 1 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h1>
+
+      <h2>Heading 2 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h2>
+
+      <h3>Heading 3 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h3>
+
+      <h4>Heading 4 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h4>
+
+      <h5>Heading 5 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h5>
+
+      <h6>Heading 6 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h6>
       
       <p>This is some test web code. I don't know how it will look.</p>
 
