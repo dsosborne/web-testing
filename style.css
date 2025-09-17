@@ -2,14 +2,36 @@ html {
 	font-size: 20px;
 }
 
+body {
+	background-color: #fcf9f3;
+	font-family: Georgia, serif;
+	line-height: 1.5;
+}
+
 main {
 	margin: auto;
 	max-width: 65ch;
 }
 
+h2 {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+code, pre {
+	font-family: Courier, monospace;
+}
 
 code {
-	background-color: lightblue;
+	background-color: #ece9e3;
+}
+
+.code-html-element::before {
+	content: '<';
+}
+
+.code-html-element::after {
+	content: '>';
 }
 
 pre {
