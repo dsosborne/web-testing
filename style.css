@@ -18,6 +18,11 @@ h2 {
 	border-bottom: 2px solid black;
 }
 
+.large-content-element-list {
+	max-height: 50lh;
+	column-count: 3;
+}
+
 code, pre {
 	font-family: Courier, monospace;
 }
