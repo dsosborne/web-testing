@@ -6,17 +6,17 @@
 
 		<title>Web Testing Page</title>
 
-		<meta charset="UTF-8"/>
+		<meta charset="UTF-8">
   
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-		<meta name="description" content="Web Testing"/>
+		<meta name="description" content="Web Testing">
 
-		<meta name="keywords" content="HTML, CSS, JavaScript"/>
+		<meta name="keywords" content="HTML, CSS, JavaScript">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<meta name="author" content="Stuart Bourne"/>
+		<meta name="author" content="Stuart Bourne">
 
 		<meta http-equiv="Cache-Control" content="no-cache">
 
@@ -69,7 +69,7 @@
 			Flow content is a broad catetory that includes most elements that can go inside the <code class="code-html-element">body</code> element. This includes elements from many other types of content. Below is a list of elements that are flow content.
 		</p>
 		
-		<ul>
+		<ul class="large-content-element-list">
 			<li><code class="code-html-element">a</code></li>
 			<li><code class="code-html-element">abbr</code></li>
 			<li><code class="code-html-element">address</code></li>
@@ -197,28 +197,110 @@
 		<h3>Phrasing Content</h3>
 		
 		<p>
+			Phrasing content is a subset of flow content that is the text of the document as well as elements that mark up that text at the intra-paragraph level.
 		</p>
 		
-		<ul>
-			<li><code class="code-html-element">xxx</code></li>
+		<ul class="large-content-element-list">
+			<li><code class="code-html-element">a</code></li>
+			<li><code class="code-html-element">abbr</code></li>
+			<li><code class="code-html-element">area</code> (if it is a descendant of a <code class="code-html-element">map</code> element)</li>
+			<li><code class="code-html-element">audio</code></li>
+			<li><code class="code-html-element">b</code></li>
+			<li><code class="code-html-element">bdi</code></li>
+			<li><code class="code-html-element">bdo</code></li>
+			<li><code class="code-html-element">br</code></li>
+			<li><code class="code-html-element">button</code></li>
+			<li><code class="code-html-element">canvas</code></li>
+			<li><code class="code-html-element">cite</code></li>
+			<li><code class="code-html-element">code</code></li>
+			<li><code class="code-html-element">data</code></li>
+			<li><code class="code-html-element">datalist</code></li>
+			<li><code class="code-html-element">del</code></li>
+			<li><code class="code-html-element">dfn</code></li>
+			<li><code class="code-html-element">em</code></li>
+			<li><code class="code-html-element">embed</code></li>
+			<li><code class="code-html-element">i</code></li>
+			<li><code class="code-html-element">iframe</code></li>
+			<li><code class="code-html-element">img</code></li>
+			<li><code class="code-html-element">input</code></li>
+			<li><code class="code-html-element">ins</code></li>
+			<li><code class="code-html-element">kbd</code></li>
+			<li><code class="code-html-element">label</code></li>
+			<li><code class="code-html-element">link</code> (if it is allowed in the body)</li>
+			<li><code class="code-html-element">map</code></li>
+			<li><code class="code-html-element">mark</code></li>
+			<li><code class="code-html-element">math</code></li>
+			<li><code class="code-html-element">menu</code></li>
+			<li><code class="code-html-element">meta</code> (if the <code class="code-html-attribute">itemprop</code> attribute is present)</li>
+			<li><code class="code-html-element">meter</code></li>
+			<li><code class="code-html-element">noscript</code></li>
+			<li><code class="code-html-element">object</code></li>
+			<li><code class="code-html-element">output</code></li>
+			<li><code class="code-html-element">picture</code></li>
+			<li><code class="code-html-element">progress</code></li>
+			<li><code class="code-html-element">q</code></li>
+			<li><code class="code-html-element">ruby</code></li>
+			<li><code class="code-html-element">s</code></li>
+			<li><code class="code-html-element">samp</code></li>
+			<li><code class="code-html-element">script</code></li>
+			<li><code class="code-html-element">select</code></li>
+			<li><code class="code-html-element">selectedcontent</code> (if it is a descendant of a <code class="code-html-element">button</code> in a <code class="code-html-element">select</code>)</li>
+			<li><code class="code-html-element">slot</code></li>
+			<li><code class="code-html-element">small</code></li>
+			<li><code class="code-html-element">span</code></li>
+			<li><code class="code-html-element">strong</code></li>
+			<li><code class="code-html-element">sub</code></li>
+			<li><code class="code-html-element">sup</code></li>
+			<li><code class="code-html-element">svg</code></li>
+			<li><code class="code-html-element">template</code></li>
+			<li><code class="code-html-element">textarea</code></li>
+			<li><code class="code-html-element">time</code></li>
+			<li><code class="code-html-element">u</code></li>
+			<li><code class="code-html-element">var</code></li>
+			<li><code class="code-html-element">video</code></li>
+			<li><code class="code-html-element">wbr</code></li>
+			<li>automonous custom elements</li>
+			<li>text</li>
 		</ul>
 		
 		<h3>Embedded Content</h3>
 		
 		<p>
+			Embedded content is a subset of flow content that imports another resource into the document, or content from another vocabulary that is inserted into the document.
 		</p>
 		
 		<ul>
-			<li><code class="code-html-element">xxx</code></li>
+			<li><code class="code-html-element">audio</code></li>
+			<li><code class="code-html-element">canvas</code></li>
+			<li><code class="code-html-element">embed</code></li>
+			<li><code class="code-html-element">iframe</code></li>
+			<li><code class="code-html-element">img</code></li>
+			<li><code class="code-html-element">math</code></li>
+			<li><code class="code-html-element">object</code></li>
+			<li><code class="code-html-element">picture</code></li>
+			<li><code class="code-html-element">svg</code></li>
+			<li><code class="code-html-element">video</code></li>
 		</ul>
 		
 		<h3>Interactive Content</h3>
 		
 		<p>
+			Interactive content is a subset of flow content that is specifically intended to user interaction.
 		</p>
 		
 		<ul>
-			<li><code class="code-html-element">xxx</code></li>
+			<li><code class="code-html-element">a</code> (if the <code class="code-html-attribute">href</code> attribute is present)</li>
+			<li><code class="code-html-element">audio</code> (if the <code class="code-html-attribute">controls</code> attribute is present)</li>
+			<li><code class="code-html-element">button</code></li>
+			<li><code class="code-html-element">details</code></li>
+			<li><code class="code-html-element">embed</code></li>
+			<li><code class="code-html-element">iframe</code></li>
+			<li><code class="code-html-element">img</code> (if the <code class="code-html-attribute">usemap</code> attribute is present)</li>
+			<li><code class="code-html-element">input</code> (if the <code class="code-html-attribute">type</code> attribute is not in the hidden state)</li>
+			<li><code class="code-html-element">label</code></li>
+			<li><code class="code-html-element">select</code></li>
+			<li><code class="code-html-element">textarea</code></li>
+			<li><code class="code-html-element">video</code> (if the <code class="code-html-attribute">controls</code> attribute is present)</li>
 		</ul>
 		
 		<h2>Headings, Headers, and Footers</h2>
