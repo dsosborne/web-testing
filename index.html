@@ -28,698 +28,498 @@
 
     <main>
 
-		<h1>Web Page Testing</h1>
-		
-		<h2>Types of Content</h2>
-		
-		<p>
-			HTML elements fall into zero or more content types. These types are:
-		</p>
-		
-		<ul>
-			<li>Metadata content</li>
-			<li>Flow content</li>
-			<li>Sectioning content</li>
-			<li>Heading content</li>
-			<li>Phrasing content</li>
-			<li>Embedded content</li>
-			<li>Interactive content</li>
-		</ul>
-		
-		<h3>Metadata Content</h3>
-		
-		<p>
-			Metadata content is content that sets up the presentation or behavior of the rest of the content. It also sets up the relationship of the document with other documents. Below is a list of elements that are metadata content.
-		</p>
-		
-		<ul>
-			<li><code class="code-html-element">base</code></li>
-			<li><code class="code-html-element">link</code></li>
-			<li><code class="code-html-element">meta</code></li>
-			<li><code class="code-html-element">noscript</code></li>
-			<li><code class="code-html-element">script</code></li>
-			<li><code class="code-html-element">style</code></li>
-			<li><code class="code-html-element">template</code></li>
-			<li><code class="code-html-element">title</code></li>
-		</ul>
-		
-		<h3>Flow Content</h3>
-		
-		<p>
-			Flow content is a broad catetory that includes most elements that can go inside the <code class="code-html-element">body</code> element. This includes elements from many other types of content. Below is a list of elements that are flow content.
-		</p>
-		
-		<ul class="large-content-element-list">
-			<li><code class="code-html-element">a</code></li>
-			<li><code class="code-html-element">abbr</code></li>
-			<li><code class="code-html-element">address</code></li>
-			<li><code class="code-html-element">area</code> (if it is a descendant of a <code class="code-html-element">map</code> element)</li>
-			<li><code class="code-html-element">article</code></li>
-			<li><code class="code-html-element">aside</code></li>
-			<li><code class="code-html-element">audio</code></li>
-			<li><code class="code-html-element">b</code></li>
-			<li><code class="code-html-element">bdi</code></li>
-			<li><code class="code-html-element">bdo</code></li>
-			<li><code class="code-html-element">blockquote</code></li>
-			<li><code class="code-html-element">br</code></li>
-			<li><code class="code-html-element">button</code></li>
-			<li><code class="code-html-element">canvas</code></li>
-			<li><code class="code-html-element">cite</code></li>
-			<li><code class="code-html-element">code</code></li>
-			<li><code class="code-html-element">data</code></li>
-			<li><code class="code-html-element">datalist</code></li>
-			<li><code class="code-html-element">del</code></li>
-			<li><code class="code-html-element">details</code></li>
-			<li><code class="code-html-element">dfn</code></li>
-			<li><code class="code-html-element">dialog</code></li>
-			<li><code class="code-html-element">div</code></li>
-			<li><code class="code-html-element">dl</code></li>
-			<li><code class="code-html-element">em</code></li>
-			<li><code class="code-html-element">embed</code></li>
-			<li><code class="code-html-element">fieldset</code></li>
-			<li><code class="code-html-element">figure</code></li>
-			<li><code class="code-html-element">footer</code></li>
-			<li><code class="code-html-element">form</code></li>
-			<li><code class="code-html-element">h1</code></li>
-			<li><code class="code-html-element">h2</code></li>
-			<li><code class="code-html-element">h3</code></li>
-			<li><code class="code-html-element">h4</code></li>
-			<li><code class="code-html-element">h5</code></li>
-			<li><code class="code-html-element">h6</code></li>
-			<li><code class="code-html-element">header</code></li>
-			<li><code class="code-html-element">hgroup</code></li>
-			<li><code class="code-html-element">hr</code></li>
-			<li><code class="code-html-element">i</code></li>
-			<li><code class="code-html-element">iframe</code></li>
-			<li><code class="code-html-element">img</code></li>
-			<li><code class="code-html-element">input</code></li>
-			<li><code class="code-html-element">ins</code></li>
-			<li><code class="code-html-element">kbd</code></li>
-			<li><code class="code-html-element">label</code></li>
-			<li><code class="code-html-element">link</code> (if it is allowed in the body)</li>
-			<li><code class="code-html-element">main</code> (if it is a hierarchically correct <code class="code-html-element">main</code> element)</li>
-			<li><code class="code-html-element">map</code></li>
-			<li><code class="code-html-element">mark</code></li>
-			<li><code class="code-html-element">math</code></li>
-			<li><code class="code-html-element">menu</code></li>
-			<li><code class="code-html-element">meta</code> (if the <code class="code-html-attribute">itemprop</code> attribute is present)</li>
-			<li><code class="code-html-element">meter</code></li>
-			<li><code class="code-html-element">nav</code></li>
-			<li><code class="code-html-element">noscript</code></li>
-			<li><code class="code-html-element">object</code></li>
-			<li><code class="code-html-element">ol</code></li>
-			<li><code class="code-html-element">output</code></li>
-			<li><code class="code-html-element">p</code></li>
-			<li><code class="code-html-element">picture</code></li>
-			<li><code class="code-html-element">pre</code></li>
-			<li><code class="code-html-element">progress</code></li>
-			<li><code class="code-html-element">q</code></li>
-			<li><code class="code-html-element">ruby</code></li>
-			<li><code class="code-html-element">s</code></li>
-			<li><code class="code-html-element">samp</code></li>
-			<li><code class="code-html-element">script</code></li>
-			<li><code class="code-html-element">search</code></li>
-			<li><code class="code-html-element">section</code></li>
-			<li><code class="code-html-element">select</code></li>
-			<li><code class="code-html-element">slot</code></li>
-			<li><code class="code-html-element">small</code></li>
-			<li><code class="code-html-element">span</code></li>
-			<li><code class="code-html-element">strong</code></li>
-			<li><code class="code-html-element">sub</code></li>
-			<li><code class="code-html-element">sup</code></li>
-			<li><code class="code-html-element">svg</code></li>
-			<li><code class="code-html-element">table</code></li>
-			<li><code class="code-html-element">template</code></li>
-			<li><code class="code-html-element">textarea</code></li>
-			<li><code class="code-html-element">time</code></li>
-			<li><code class="code-html-element">u</code></li>
-			<li><code class="code-html-element">ul</code></li>
-			<li><code class="code-html-element">var</code></li>
-			<li><code class="code-html-element">video</code></li>
-			<li><code class="code-html-element">wbr</code></li>
-			<li>automonous custom elements</li>
-			<li>text</li>
-		</ul>
-		
-		<h3>Sectioning Content</h3>
-		
-		<p>
-			Sectioning content is a subset of flow content and creates a section in the current outline that defines the scope of the <code class="code-html-element">header</code> and <code class="code-html-element">footer</code> elements. Below is a list of elements that are sectioning content.
-		</p>
-		
-		<ul>
-			<li><code class="code-html-element">article</code></li>
-			<li><code class="code-html-element">aside</code></li>
-			<li><code class="code-html-element">nav</code></li>
-			<li><code class="code-html-element">section</code></li>
-		</ul>
-		
-		<h3>Heading Content</h3>
-		
-		<p>
-			Heading content is is a subset of flow content that defines the heading or title of a section. This applies to sections marked by an explicit sectioning content element as well as to sections implicitly defined by the heading content itself.
-		</p>
-		
-		<ul>
-			<li><code class="code-html-element">h1</code></li>
-			<li><code class="code-html-element">h2</code></li>
-			<li><code class="code-html-element">h3</code></li>
-			<li><code class="code-html-element">h4</code></li>
-			<li><code class="code-html-element">h5</code></li>
-			<li><code class="code-html-element">h6</code></li>
-			<li><code class="code-html-element">hgroup</code></li>
-		</ul>
-		
-		<p>
-			The <code class="code-html-element">header</code> element is not heading content itself although it is likely to contain heading content.
-		</p>
-		
-		<h3>Phrasing Content</h3>
-		
-		<p>
-			Phrasing content is a subset of flow content that is the text of the document as well as elements that mark up that text at the intra-paragraph level.
-		</p>
-		
-		<ul class="large-content-element-list">
-			<li><code class="code-html-element">a</code></li>
-			<li><code class="code-html-element">abbr</code></li>
-			<li><code class="code-html-element">area</code> (if it is a descendant of a <code class="code-html-element">map</code> element)</li>
-			<li><code class="code-html-element">audio</code></li>
-			<li><code class="code-html-element">b</code></li>
-			<li><code class="code-html-element">bdi</code></li>
-			<li><code class="code-html-element">bdo</code></li>
-			<li><code class="code-html-element">br</code></li>
-			<li><code class="code-html-element">button</code></li>
-			<li><code class="code-html-element">canvas</code></li>
-			<li><code class="code-html-element">cite</code></li>
-			<li><code class="code-html-element">code</code></li>
-			<li><code class="code-html-element">data</code></li>
-			<li><code class="code-html-element">datalist</code></li>
-			<li><code class="code-html-element">del</code></li>
-			<li><code class="code-html-element">dfn</code></li>
-			<li><code class="code-html-element">em</code></li>
-			<li><code class="code-html-element">embed</code></li>
-			<li><code class="code-html-element">i</code></li>
-			<li><code class="code-html-element">iframe</code></li>
-			<li><code class="code-html-element">img</code></li>
-			<li><code class="code-html-element">input</code></li>
-			<li><code class="code-html-element">ins</code></li>
-			<li><code class="code-html-element">kbd</code></li>
-			<li><code class="code-html-element">label</code></li>
-			<li><code class="code-html-element">link</code> (if it is allowed in the body)</li>
-			<li><code class="code-html-element">map</code></li>
-			<li><code class="code-html-element">mark</code></li>
-			<li><code class="code-html-element">math</code></li>
-			<li><code class="code-html-element">menu</code></li>
-			<li><code class="code-html-element">meta</code> (if the <code class="code-html-attribute">itemprop</code> attribute is present)</li>
-			<li><code class="code-html-element">meter</code></li>
-			<li><code class="code-html-element">noscript</code></li>
-			<li><code class="code-html-element">object</code></li>
-			<li><code class="code-html-element">output</code></li>
-			<li><code class="code-html-element">picture</code></li>
-			<li><code class="code-html-element">progress</code></li>
-			<li><code class="code-html-element">q</code></li>
-			<li><code class="code-html-element">ruby</code></li>
-			<li><code class="code-html-element">s</code></li>
-			<li><code class="code-html-element">samp</code></li>
-			<li><code class="code-html-element">script</code></li>
-			<li><code class="code-html-element">select</code></li>
-			<li><code class="code-html-element">selectedcontent</code> (if it is a descendant of a <code class="code-html-element">button</code> in a <code class="code-html-element">select</code>)</li>
-			<li><code class="code-html-element">slot</code></li>
-			<li><code class="code-html-element">small</code></li>
-			<li><code class="code-html-element">span</code></li>
-			<li><code class="code-html-element">strong</code></li>
-			<li><code class="code-html-element">sub</code></li>
-			<li><code class="code-html-element">sup</code></li>
-			<li><code class="code-html-element">svg</code></li>
-			<li><code class="code-html-element">template</code></li>
-			<li><code class="code-html-element">textarea</code></li>
-			<li><code class="code-html-element">time</code></li>
-			<li><code class="code-html-element">u</code></li>
-			<li><code class="code-html-element">var</code></li>
-			<li><code class="code-html-element">video</code></li>
-			<li><code class="code-html-element">wbr</code></li>
-			<li>automonous custom elements</li>
-			<li>text</li>
-		</ul>
-		
-		<h3>Embedded Content</h3>
-		
-		<p>
-			Embedded content is a subset of flow content that imports another resource into the document, or content from another vocabulary that is inserted into the document.
-		</p>
-		
-		<ul>
-			<li><code class="code-html-element">audio</code></li>
-			<li><code class="code-html-element">canvas</code></li>
-			<li><code class="code-html-element">embed</code></li>
-			<li><code class="code-html-element">iframe</code></li>
-			<li><code class="code-html-element">img</code></li>
-			<li><code class="code-html-element">math</code></li>
-			<li><code class="code-html-element">object</code></li>
-			<li><code class="code-html-element">picture</code></li>
-			<li><code class="code-html-element">svg</code></li>
-			<li><code class="code-html-element">video</code></li>
-		</ul>
-		
-		<h3>Interactive Content</h3>
-		
-		<p>
-			Interactive content is a subset of flow content that is specifically intended to user interaction.
-		</p>
-		
-		<ul>
-			<li><code class="code-html-element">a</code> (if the <code class="code-html-attribute">href</code> attribute is present)</li>
-			<li><code class="code-html-element">audio</code> (if the <code class="code-html-attribute">controls</code> attribute is present)</li>
-			<li><code class="code-html-element">button</code></li>
-			<li><code class="code-html-element">details</code></li>
-			<li><code class="code-html-element">embed</code></li>
-			<li><code class="code-html-element">iframe</code></li>
-			<li><code class="code-html-element">img</code> (if the <code class="code-html-attribute">usemap</code> attribute is present)</li>
-			<li><code class="code-html-element">input</code> (if the <code class="code-html-attribute">type</code> attribute is not in the hidden state)</li>
-			<li><code class="code-html-element">label</code></li>
-			<li><code class="code-html-element">select</code></li>
-			<li><code class="code-html-element">textarea</code></li>
-			<li><code class="code-html-element">video</code> (if the <code class="code-html-attribute">controls</code> attribute is present)</li>
-		</ul>
-		
-		<h2>Headings, Headers, and Footers</h2>
-
-		<p>
-			The <code class="code-html-element">h1</code>, <code class="code-html-element">h2</code>, <code class="code-html-element">h3</code>, <code class="code-html-element">h4</code>, <code class="code-html-element">h5</code>, and <code class="code-html-element">h6</code> elements represent headings for their sections. The semantics and meaning of these elements are defined in the section on headings and outlines. These elements have a heading level given by the number in their name. The heading level corresponds to the levels of nested sections. The <code class="code-html-element">h1</code> element is for a top-level section, <code class="code-html-element">h2</code> for a subsection, <code class="code-html-element">h3</code> for a sub-subsection, and so on.
-		</p>
-
-		<p>
-		The <code class="code-html-element">hgroup</code> element represents a heading and related content. The element may be used to group an <code class="code-html-element">h1</code>–<code class="code-html-element">h6</code> element with one or more <code class="code-html-element">p</code> elements containing content representing a subheading, alternative title, or tagline.
-		</p>
-
-		<p>
-			The <code class="code-html-element">header</code> element represents a group of introductory or navigational aids. A <code class="code-html-element">header</code> element is intended to usually contain a heading (an <code class="code-html-element">h1</code>–<code class="code-html-element">h6</code> element or an <code class="code-html-element">hgroup</code> element), but this is not required. The header <code class="code-html-element">header</code> can also be used to wrap a section’s table of contents, a search form, or any relevant logos.
-		</p>
-
-		<p>
-			The <code class="code-html-element">footer</code> element represents a footer for its nearest ancestor sectioning content element, or for the body element if there is no such ancestor. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
-		</p>
-
-		<p>
-			When the <code class="code-html-element">footer</code> element contains entire sections, they represent appendices, indices, long colophons, verbose license agreements, and other such content.
-		</p>
-
-		<p>
-			Contact information for the author or editor of a section belongs in an <code class="code-html-element">address</code> element, possibly itself inside a <code class="code-html-element">footer</code>. Bylines and other information that could be suitable for both a <code class="code-html-element">header</code> or a <code class="code-html-element">footer</code> can be placed in either (or neither). The primary purpose of these elements is merely to help the author write self-explanatory markup that is easy to maintain and style; they are not intended to impose specific structures on authors.
-		</p>
-
-		<p>
-			Footers don’t necessarily have to appear at the end of a section, though they usually do. When there is no ancestor sectioning content element, then it applies to the whole page.
-		</p>
-
-		<p>
-			The <code class="code-html-element">footer</code> element is not itself sectioning content; it doesn’t introduce a new section.
-		</p>
-
-		<p>
-			The <code class="code-html-element">address</code> element represents the contact information for its nearest <code class="code-html-element">article</code> or <code class="code-html-element">body</code> element ancestor. If that is the <code class="code-html-element">body</code> element, then the contact information applies to the document as a whole.
-		</p>
-
-		<p>
-			The <code class="code-html-element">address</code> element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The <code class="code-html-element">p</code> element is the appropriate element for marking up postal addresses in general.)
-		</p>
-
-		<p>
-			The <code class="code-html-element">address</code> element must not contain information other than contact information.
-		</p>
-
-		<p>
-			Typically, the <code class="code-html-element">address</code> element would be included along with other information in a <code class="code-html-element">footer</code> element.
-		</p>
-		
-		<p>
-			Following is a test of the 6 heading levels.
-		</p>
-
-      <h1>Heading 1 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h1>
-
-      <h2>Heading 2 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h2>
-
-      <h3>Heading 3 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h3>
-
-      <h4>Heading 4 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h4>
-
-      <h5>Heading 5 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h5>
-
-      <h6>Heading 6 is a Test for Font Size, Tracking, Line Length, Line Spacing, Legibility, Readability, Mood, Feel, Weight, Style, Characters, and Any Other Requirements</h6>
-      
-      <p>This is some test web code. I don't know how it will look.</p>
-
-      <p>This is another paragraph. I need to put more text here and stuff so that it takes up more space and wraps to new lines and junk. I hope it works and looks okay and junk.</p>
-
-		<h2>Text Importance, Emphasis, and Meaning</h2>
-
-		<p>
-			When text needs to <em>stress emphasis</em> on a word or words, use the <code class="code-html-element">em</code> element in <abbr>HTML</abbr>. This is not simply a generic italics-styled word or phrase; it is to add stress. If text is intended to stand out from the rest of the paragraph, as if it were a different mood or voice, the <code class="code-html-element">i</code> element is more appropriate. Also, the <code class="code-html-element">em</code> element is not intended to convey importance; for that, the <code class="code-html-element">strong</code> element is more appropriate.
-		</p>
-
-		<p>
-			When text represents <strong>importance, seriousness, or urgency,</strong> the <code class="code-html-element">strong</code> element should be used. The <code class="code-html-element">strong</code> element can be use anywhere such as a heading, caption, or paragraph to distinguish text that is important. You can nest the <code class="code-html-element">strong</code> element with more inner text being even more important.
-		</p>
-
-		<p>
-			For text that represents <small>side commends such as small print</small>, use the <code class="code-html-element">small</code> element. This usually includes disclaimers, caveats, copyrights, term and conditions, etc. It can also be used for attribution as in satisfying a licence requirement. The <code class="code-html-element">small</code> element does not de-emphasize or lower the importance of text and it is only intended for short runs of text. For instance, in a terms and conditions page, the text is the main content so <code class="code-html-element">small</code> wouldn’t be appropriate. The <code class="code-html-element">small</code> element should not be used for subheadings; the <code class="code-html-element">hgroup</code> element is more appropriate for that.
-		</p>
-
-		<p>
-			For content that is <s>no longer accurate or relavant</s>, use the <code class="code-html-element">s</code> element. The <code class="code-html-element">s</code> element is not appropriate when indicating document edits; to mark a section of text as having been removed from a document, use the <code class="code-html-element">del</code> element.
-		</p>
-
-		<p>
-			When text represents an <i>alternate voice or mood</i>, use the <code class="code-html-element">i</code> element. This can be something like a taxonomic designation, technical term, idiomatic phrase from another language, transliteration, thought, or a ship name in Western texts. If the text needs to be stressed, use the <code class="code-html-element">em</code> element. If the text is very important, use the <code class="code-html-element">strong</code> element.
-		</p>
-
-		<p>
-			For text that requires <b>attention drawn</b> for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, use the <code class="code-html-element">b</code> element. It can be used for key words in a document abstract product names in a review, actionable words in interactive text-driven software, or an article lede. The <code class="code-html-element">b</code> element should be used as a last resort in case no other element meets the requirements.
-		</p>
-
-		<p>
-			For text that should be <mark>highlighted for reference purposes</mark>, due to its relevance in another context, use the <code class="code-html-element">mark</code> element. When used in a quotation or other block of text referred to from the prose, it indicates a highlight that was not originally present but which has been added to bring the reader’s attention to a part of the text that might not have been considered important by the original author when the block was originally written, but which is now under previously unexpected scrutiny. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its likely relevance to the user’s current activity.
-		</p>
-
-		<p>
-			For text with an <u>unarticulated, though explicitly rendered, non-textual annotation,</u> use the <code class="code-html-element">u</code> element. This could be for labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt. In most cases a different element should be used.
-		</p>
-
-		<h2>Horizontal Rules</h2>
-
-		<p>
-			The <code class="code-html-element">hr</code> element represents a paragraph-level thematic break, e.g., a scene change in a story, or a transition to another topic within a section of a reference book; alternatively, it represents a separator between a set of options of a <code class="code-html-element">select</code> element.
-		</p>
-
-		<p>
-			Below is a horizontal rule.
-		</p>
-
-		<hr>
-
-		<h2>Links</h2>
-
-		<p>
-			If your text is a hyperlink to another web location, use the <code class="code-html-element">a</code> element.
-		</p>
-
-		<p>
-			Let’s take a look at some example links. We may have <a href="#top">internal links</a> as well as <a href="https://www.fender.com/" target="_blank" class="link-external">external links</a> in our page.
-		</p>
-
-		<p>
-		What if we have a <a href="#top">link that is long or that just happens to wrap to a new line and stuff</a> and things and what not?
-		</p>
-
-		<h2>Lists</h2>
-
-		<p>
-			If you want an unordered (bulleted) list, use the <code class="code-html-element">ul</code> element. If you want an ordered (numbered) list, use the <code class="code-html-element">ol</code> element. Child elements for either list type are indicated with the <code class="code-html-element">li</code> element.
-		</p>
-
-		<p>
-			There are two ways that lists can be formatted. First, is using the built-in formatting for the <code class="code-html-element">ul</code> and <code class="code-html-element">ol</code> elements. This provides very functional lists but doesn’t allow for much formatting. If you need to customize the formats, you can use the <abbr title="Cascading Style Sheets">CSS</abbr> <code>::before</code> pseudo element.
-		</p>
-
-		<p>
-			The <code class="code-html-element">menu</code> element represents a toolbar consisting of its contents, in the form of an unordered list of items (represented by <code class="code-html-element">li</code> elements), each of which represents a command that the user can perform or activate.
-		</p>
-
-		<p>
-			The <code class="code-html-element">menu</code> element is simply a semantic alternative to <code class="code-html-element">ul</code> to express an unordered list of commands (a "toolbar").
-		</p>
-
-		<p>
-			Following is an unordered list.
-		</p>
-
-		<ul>
-			<li>This is a list item.</li>
-			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-			<li>This is a list item.
-				<ul>
-					<li>This is a list item.</li>
-					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-					<li>This is a list item.
-						<ul>
-							<li>This is a list item.</li>
-							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-							<li>This is a list item.
-								<ul>
-									<li>This is a list item.</li>
-									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-									<li>This is a list item.</li>
-									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-									<li>This is a list item.</li>
-								</ul>
-							</li>
-							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-							<li>This is a list item.</li>
-						</ul>
-					</li>
-					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-					<li>This is a list item.</li>
-				</ul>
-			</li>
-			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-			<li>This is a list item.</li>
-		</ul>
-
-		<p>
-			Following is an ordered.
-		</p>
-		
-		<ol>
-			<li>This is a list item.</li>
-			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-			<li>This is a list item.
-				<ol>
-					<li>This is a list item.</li>
-					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-					<li>This is a list item.
-						<ol>
-							<li>This is a list item.</li>
-							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-							<li>This is a list item.
-								<ol>
-									<li>This is a list item.</li>
-									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-									<li>This is a list item.</li>
-									<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-									<li>This is a list item.</li>
-								</ol>
-							</li>
-							<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-							<li>This is a list item.</li>
-						</ol>
-					</li>
-					<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-					<li>This is a list item.</li>
-				</ol>
-			</li>
-			<li>This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item. This is a list item.</li>
-			<li>This is a list item.</li>
-		</ol>
-
-		<h2>Definitions and Description Lists</h2>
-
-		<p>
-			When you have a <dfn>term</dfn> that is defined on a page, use the <code class="code-html-element">dfn</code> element. The paragraph, description list group, or section that is the nearest ancestor of the <code class="code-html-element">dfn</code> element must also contain the definition(s) for the term given by the <code class="code-html-element">dfn</code> element.
-		</p>
-
-		<p>
-			If you have a list of name-value groups (a description list), use the <code class="code-html-element">dl</code>, <code class="code-html-element">dt</code>, and <code class="code-html-element">dd</code> elements. The <code class="code-html-element">dl</code> element defines the list, the <code class="code-html-element">dt</code> element contains the name or term, and the <code class="code-html-element">dd</code> element contains the description, definition, or value of the name or term. The <code class="code-html-element">dt</code> element itself, when used in a <code class="code-html-element">dl</code> element, does not indicate that its contents are a term being defined, but this can be indicated using the <code class="code-html-element">dfn</code> element.
-		</p>
-
-		<p>
-			Below is an example of a description list used to show metadata.
-		</p>
-
-		<dl>
-			<dt>Item</dt>
-			<dd>My Web Page</dd>
-			<dt>Date Created</dt>
-			<dd><time datetime="2024-01-01 08:30"></time>January 1, 2024 8:30a.m.</dd>
-			<dt>Date Updated</dt>
-			<dd><time datetime="2024-01-18 13:30"></time>January 18, 2024 1:30p.m.</dd>
-			<dt>Authors</dt>
-			<dd>Jane Doe</dd>
-			<dd>John Doe</dd>
-			<dt>Keywords</dt>
-			<dd>Telecaster</dd>
-			<dd>Stratocaster</dd>
-			<dd>Les Paul</dd>
-		</dl>
-
-		<p>
-			Here is an example of a description list used with the <code class="code-html-element">dfn</code> element to create a definitions list.
-		</p>
-
-		<dl>
-			<dt><dfn>Hackneyed</dfn></dt>
-			<dd>Something is considered hackneyed when it is not interesting, funny, etc., because of being used too often; in other words, it’s neither fresh nor original.</dd>
-			<dt><dfn>Leitmotif</dfn></dt>
-			<dd>A leitmotif is a dominant recurring theme—something (such as a melody, an idea, or a phrase) repeated many times throughout a book, story, opera, etc.</dd>
-			<dt><dfn>Tome</dfn></dt>
-			<dd>Tome is a formal word for a book, and especially a very large, thick, often scholarly book.</dd>
-			<dt><dfn>Cerulean</dfn></dt>
-		<dd>Cerulean describes things whose blue color resembles the blue of a clear sky.</dd>
-		</dl>
-
-		<h2>Abbreviations, Acronyms, and Initialisms</h2>
-
-		<p>
-			When the text indicates an abbreviation, acronym, or an initialism, use the <code class="code-html-element">abbr</code> element. It can be used with the <code class="code-html-attribute">title</code> attribute to provide an expansion of the abbreviation.
-		</p>
-
-		<p>
-			To understand the differences between abbreviations, acronyms, and initialisms, see the definitions below.
-		</p>
-
-		<dl>
-			<dt><dfn>Abbreviation</dfn></dt>
-			<dd>An abbreviation is a shortened form of a word or phrase intended to speed up communication and/or use fewer symbols. An abbreviation by itself is a shortened form of a single word such as <em>vs.</em> (versus) or <em>dept.</em>(department). In addition to single-word abbreviations, there are two other types of abbreviations for compound terms: acronym and initialism.</dd>
-			<dt><dfn>Acronym</dfn></dt>
-			<dd>An acronym is a type of abbreviation made from the first letters or parts of a compound term and is read or spoken as a single word, not letter by letter. Examples are <em>awol</em> (absent without official leave), <em>radar</em> (radio detection and ranging), or <em>scuba</em> (self-contained underwater breating apparatus).</dd>
-			<dt><dfn>Initialism</dfn></dt>
-			<dd>An initialism is also a type of abbreviation made from the first letters or parts of a compound term, but it’s sounded letter by letter, not as one word. An example is <em>r.p.m.</em> (revolutions per minute).</dd>
-		</dl>
-
-		<p>
-			With uncommon abbreviations, it is best practice to spell out the full word or phrase and include the abbreviation in parenthesis the first time it is used. For example, CARPE may need an introduction as Committee on Academic Rights, Privileges, and Ethics but PTA may not need an introduction as most people understand it is Parent Teacher Association.
-		</p>
-
-		<p>
-			Don’t use abbreviations that have already been taken if possible. For example, in 1959, PMS stood for primary message systems but stands premenstrual syndrome today.
-		</p>
-
-		<p>
-			When choosing an indefinite article before an abbreviation, the choice between <em>a</em> and <em>an</em> depends on how the first syllable is sounded; a vowel sound takes an <em>an</em> and a consonant sound takes an <em>a</em>. So we get <em>an</em> SOS, <em>a</em> DVD player, and <em>a</em> UFO.
-		</p>
-
-		<p>
-			<strong>Periods after letters.</strong> There is no consistency whether to place a period after each letter in an acronym or initialism. The current trend is to omit periods. Acronyms are spoken as a single word so it may not make sense to include the periods (UNESCO). If an initialism is made up of lowercase letters, periods are often preferred (rpm or r.p.m.; am or a.m.). However, initialisms using capital letters (ABC, ATM, HIV, IRA, SRV, URL, etc.) tend not to have periods.
-		</p>
-
-		<p>
-			<strong>Capitalization.</strong> There is no consistency on capitalization. In American English, there is a tendency to print initialisms in all-caps (FMLA, NJDEP) and acronyms in small-caps (GAAP, MADD, NASA); but this is not a rule. However, some publications use all-caps for both. In British English, the tendency is to uppercase only the first letter (Ifor = Implementation Force; Isa = individual savings account).
-		</p>
-
-		<p>
-			<strong>Pluralization.</strong> The pluralization of an initialism or acronym is done by simply adding an <em>s</em> without an apostrophe (CEOs, FAQs, IPOs, PCs, PINs, POWs, etc.). This is consistent with the modern trend of simplicity. Another reason to do this is that sometimes an acronym or initialism is used as a possessive, in which case you use the apostrophe (the CEO’s schedule; NASA’s budget). There are some acronyms or abbreviations that pluralize the first word if spelled out; add an s to the end of the acronym or initialism for these (POW = prisoners of war; WMDs = weapons of mass destruction). If using all lowercase acronyms or initializations, you may need to use an apostrophe for pluralization to avoid confusion (gif’s or gifs). For abbreviations that are not acronyms or initialisms, add an s before the period (paras. = paragraphs; assocs. = associates). However, there are some standard abbreviations made by doubling a prominant letter (exx. = examples; MSS. = manuscripts; pp. = pages).
-		</p>
-
-		<p>
-			For the examles below, if you hover your mouse over the abbreviation, a definition should pop up.
-		</p>
-
-		<p>
-			For abbreviations that are not acronyms or initialisms, we will keep everything lowercase with a period at the end. Examples are <abbr title="versus">vs.</abbr> and <abbr title="department">dept.</abbr>
-		</p>
-
-		<p>
-			With acronyms, we will use small-caps. Examples are <abbr class="acronym" title="American Standard Code for Information Interchange">ASCII</abbr>, <abbr class="acronym" title="Local Area Network">LAN</abbr>, and <abbr class="acronym" title="American National Standards Institute">ANSI</abbr>.
-		</p>
-
-		<p>
-			For initialisms, we will use all-caps. Examples are <abbr class="initialism" title="HyperText Markup Language">HTML</abbr>, <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr>, and <abbr class="initialism" title="United States of America">USA</abbr>.
-		</p>
-
-		<h2>Quotes and Blockquotes</h2>
-
-		<p>
-			When you have text that is some <q>phrasing content from another source</q>, you can use the <code class="code-html-element">q</code> element. Quotation marks should not be used directly in the quote because the <code class="code-html-element">q</code> element should automatically add the appropriate quotation marks. Sometimes you have <q>quotation marks <q>within</q> quotation marks.</q> Again, the q element (along with some CSS) will automatically take care of this.
-		</p>
-
-		<p class="notes-todo">
-			Make some notes about quotation marks. Use Garner’s Modern English Usage. Discuss AmE vs BrE.
-		</p>
-
-		<p>
-			If the quoted content has a <abbr>URL</abbr> address, it can be added to the <code class="code-html-attribute">cite</code> attribute within the <code class="code-html-element">q</code> element.
-		</p>
-
-		<p>
-			The <code class="code-html-element">q</code> element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the <code class="code-html-element">q</code> element for marking up sarcastic statements.
-		</p>
-
-		<p>
-			As an example using the <code class="code-html-element">q</code> element, according to Matthew Butterick, <q cite="https://practicaltypography.com/what-is-typography.html"><dfn>typography</dfn> is the visual component of the written word.</q>
-		</p>
-
-		<p>
-			If you have a section of text that is a quote from another source, you can use the <code class="code-html-element">blockquote</code> element.
-		</p>
-
-		<p>
-			As with the <code class="code-html-element">q</code> element, if the quoted content has a <abbr>URL</abbr> address, it can be added to the <code class="code-html-attribute">cite</code> attribute within the <code class="code-html-element">blockquote</code> element.
-		</p>
-
-		<p>
-			Attribution for the quotation, if any, must be placed outside the <code class="code-html-element">blockquote</code> element.
-		</p>
-
-		<p>
-			You may want to consider using the <code class="code-html-element">blockquote</code> element inside of a <code class="code-html-element">figure</code> element.
-		</p>
-
-		<p>
-			Here is an example of a blockquote.
-		</p>
-
-		<blockquote cite="https://practicaltypography.com/what-is-good-typography.html">
-			<p>
-				Good typography is measured by how well it reinforces the meaning of the text, not by some abstract scale of merit. Typographic choices that work for one text won’t necessarily work for another. Corollary: good typographers don’t rely on rote solutions. One size never fits all.
-			</p>
-		</blockquote>
-		<p>
-			— Matthew Butterick
-		</p>
-
-		<h2>Citations</h2>
-
-		<p>
-			For the title of a work (book, paper, essay, poem, song, script, film, TV show, etc.), such as the book <cite>Dracula</cite> use the <code class="code-html-element">cite</code> element. This can be a work that is being quoted or referenced in detail (i.e., a citation), or it can just be a work that is mentioned in passing.
-		</p>
-
-		<p>
-			A person’s name is not the title of a work — even if people call that person a piece of work — and the element must therefore not be used to mark up people’s names. (In some cases, the <code class="code-html-element">b</code> element might be appropriate for names; e.g. in a gossip article where the names of famous people are keywords rendered with a different style to draw attention to them. In other cases, if an element is really needed, the <code class="code-html-element">span</code> element can be used.)
-		</p>
-
-		<p>
-			A citation is not a quote (for which the <code class="code-html-element">q</code> element is appropriate).
-		</p>
-
-		<p class="notes-todo">
-			How to deal with addresses? Or author names, etc.? ? ? ? ?
-		</p>
-
-		<h2>Preformatted Text</h2>
-
-		<p>
-			If you have text that is preformatted or has a specific struction represented by typographic conventions rather than by element, use the <code class="code-html-element">pre</code> element. This could be used for displaying <abbr>ASCII</abbr> art, poems with specific layouts, or computer code.
-		</p>
-
-		<p>
-		To represent a block of computer code, the <code class="code-html-element">pre</code> element can be used with a <code class="code-html-element">code</code> element; to represent a block of computer output the <code class="code-html-element">pre</code> element can be used with a <code class="code-html-element">samp</code> element. Similarly, the <code class="code-html-element">kbd</code> element can be used within a <code class="code-html-element">pre</code> element to indicate text that the user is to enter.
-		</p>
-
-		<p>
-			Below is a <code class="code-html-element">pre</code> test.
-		</p>
-
-<pre>
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</pre>
-
-		<p>
-			Below is another example.
-		</p>
+		<h1>HTML Test Page</h1>
+
+		<h2>About This Page</h2>
+
+		<p>Making a website from scratch requires combining knowledge and skills from many areas including computer coding, graphic design, typography, communication, marketing, writing, and language. This page is a giant test page that reviews all the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> elements and provides examples so that you can test formatting by using CSS.</p>
+
+	<h2>HTML, CSS, and JavaScript</h2>
+
+	<p>To make a web page, you need <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> (HyperText Markup Language) which is a coding language that contains the content of the page. <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> contains only the content and meaning of the web page; it does not contain the visual format or presentation.</p>
+
+	<p>If you would like to format the web page with specific visual style, you need <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr> (Cascading Style Sheets), which is a coding language that essentially shapes and formats the content of the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> code.</p>
+
+	<p>In order to add some functionality to the web page, you may wish to use the JavaScript coding language. JavaScript can interact with both <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> and <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr> to create dynamic pages.</p>
+
+	<p><abbr class="initialism" title="HyperText Markup Language">HTML</abbr>, <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr>, and JavaScript are essentially text files that are interpreted by a web browser such as Google Chrome, Safari, or Firefox. Because these three languages are intepreted by a web browser on a users computer or mobile device, they are considered <em>front-end</em> languages.</p>
+
+There are other languages such as Python, PHP, Ruby, Java, and C# that run on a server to create a wide variety of web apps. These are called <em>back-end</em> languages and don't run on a users computer or mobile device. Back-end languages interact with front-end languages to provide information on a web page.
+
+The Resources section of this page provides links to <abbr class="initialism" title="HyperText Markup Language">HTML</abbr>, <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr>, and JavaScript standards and learning guides.
+
+## HTML Semantics
+
+<abbr class="initialism" title="HyperText Markup Language">HTML</abbr> is composed of <em>elements</em> which contain content and provide meaning to the content. <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> also contains <em>attributes</em> that provide further information about the elements.
+
+Because <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> conveys content and meaning, but not formatting, the same code can be used for different screen sizes such as desktops, laptops, tablets, and phones. <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> is also used by screen readers that read the content to visually impaired users. In addition, <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> provides data to search engines to effectively index the page. This is why it is important to make sure you use the correct elements to identify the meaning of the content.
+
+Each <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> element has a meaning or semantic assigned to it. Using them properly helps with the above functions like screen size, screen readers, and search indexing. This rather lengthy and large web page will provide the meaning of the elements as defined in the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> official standard.
+
+## Types of HTML Content
+
+HTML elements fall into zero or more content types. These types are:
+
+- Metadata content
+- Flow content
+- Sectioning content
+- Heading content
+- Phrasing content
+- Embedded content
+- Interactive content
+
+### Metadata Content
+
+Metadata content is content that sets up the presentation or behavior of the rest of the content. It also sets up the relationship of the document with other documents. Below is a list of elements that are metadata content.
+
+- <code class=“html-element”>base</code>
+- <code class=“html-element”>link</code>
+- <code class=“html-element”>meta</code>
+- <code class=“html-element”>noscript</code>
+- <code class=“html-element”>script</code>
+- <code class=“html-element”>style</code>
+- <code class=“html-element”>template</code>
+- <code class=“html-element”>title</code>
+
+### Flow Content
+
+Flow content is a broad category that includes most elements that can go inside the <code class=“html-element”>body</code> element. This includes elements from many other types of content. Below is a list of elements that are flow content.
+
+- <code class=“html-element”>a</code>
+- <code class=“html-element”>abbr</code>
+- <code class=“html-element”>address</code>
+- <code class=“html-element”>area</code> (if it is a descendant of a <code class=“html-element”>map</code> element)
+- <code class=“html-element”>article</code>
+- <code class=“html-element”>aside</code>
+- <code class=“html-element”>audio</code>
+- <code class=“html-element”>b</code>
+- <code class=“html-element”>bdi</code>
+- <code class=“html-element”>bdo</code>
+- <code class=“html-element”>blockquote</code>
+- <code class=“html-element”>br</code>
+- <code class=“html-element”>button</code>
+- <code class=“html-element”>canvas</code>
+- <code class=“html-element”>cite</code>
+- <code class=“html-element”>code</code>
+- <code class=“html-element”>data</code>
+- <code class=“html-element”>datalist</code>
+- <code class=“html-element”>del</code>
+- <code class=“html-element”>details</code>
+- <code class=“html-element”>dfn</code>
+- <code class=“html-element”>dialog</code>
+- <code class=“html-element”>div</code>
+- <code class=“html-element”>dl</code>
+- <code class=“html-element”>em</code>
+- <code class=“html-element”>embed</code>
+- <code class=“html-element”>fieldset</code>
+- <code class=“html-element”>figure</code>
+- <code class=“html-element”>footer</code>
+- <code class=“html-element”>form</code>
+- <code class=“html-element”>h1</code>
+- <code class=“html-element”>h2</code>
+- <code class=“html-element”>h3</code>
+- <code class=“html-element”>h4</code>
+- <code class=“html-element”>h5</code>
+- <code class=“html-element”>h6</code>
+- <code class=“html-element”>header</code>
+- <code class=“html-element”>hgroup</code>
+- <code class=“html-element”>hr</code>
+- <code class=“html-element”>i</code>
+- <code class=“html-element”>iframe</code>
+- <code class=“html-element”>img</code>
+- <code class=“html-element”>input</code>
+- <code class=“html-element”>ins</code>
+- <code class=“html-element”>kbd</code>
+- <code class=“html-element”>label</code>
+- <code class=“html-element”>link</code> (if it is allowed in the body)
+- <code class=“html-element”>main</code> (if it is a hierarchically correct <code class=“html-element”>main</code> element)
+- <code class=“html-element”>map</code>
+- <code class=“html-element”>mark</code>
+- <code class=“html-element”>math</code>
+- <code class=“html-element”>menu</code>
+- <code class=“html-element”>meta</code> (if the <code class=“html-attribute”>itemprop</code> attribute is present)
+- <code class=“html-element”>meter</code>
+- <code class=“html-element”>nav</code>
+- <code class=“html-element”>noscript</code>
+- <code class=“html-element”>object</code>
+- <code class=“html-element”>ol</code>
+- <code class=“html-element”>output</code>
+- <code class=“html-element”>p</code>
+- <code class=“html-element”>picture</code>
+- <code class=“html-element”>pre</code>
+- <code class=“html-element”>progress</code>
+- <code class=“html-element”>q</code>
+- <code class=“html-element”>ruby</code>
+- <code class=“html-element”>s</code>
+- <code class=“html-element”>samp</code>
+- <code class=“html-element”>script</code>
+- <code class=“html-element”>search</code>
+- <code class=“html-element”>section</code>
+- <code class=“html-element”>select</code>
+- <code class=“html-element”>slot</code>
+- <code class=“html-element”>small</code>
+- <code class=“html-element”>span</code>
+- <code class=“html-element”>strong</code>
+- <code class=“html-element”>sub</code>
+- <code class=“html-element”>sup</code>
+- <code class=“html-element”>svg</code>
+- <code class=“html-element”>table</code>
+- <code class=“html-element”>template</code>
+- <code class=“html-element”>textarea</code>
+- <code class=“html-element”>time</code>
+- <code class=“html-element”>u</code>
+- <code class=“html-element”>ul</code>
+- <code class=“html-element”>var</code>
+- <code class=“html-element”>video</code>
+- <code class=“html-element”>wbr</code>
+- automonous custom elements
+- text
+
+### Sectioning Content
+
+Sectioning content is a subset of flow content and creates a section in the current outline that defines the scope of the <code class=“html-element”>header</code> and <code class=“html-element”>footer</code> elements. Below is a list of elements that are sectioning content.
+
+- <code class=“html-element”>article</code>
+- <code class=“html-element”>aside</code>
+- <code class=“html-element”>nav</code>
+- <code class=“html-element”>section</code>
+
+### Heading Content
+
+Heading content is is a subset of flow content that defines the heading or title of a section. This applies to sections marked by an explicit sectioning content element as well as to sections implicitly defined by the heading content itself.
+
+- <code class=“html-element”>h1</code>
+- <code class=“html-element”>h2</code>
+- <code class=“html-element”>h3</code>
+- <code class=“html-element”>h4</code>
+- <code class=“html-element”>h5</code>
+- <code class=“html-element”>h6</code>
+- <code class=“html-element”>hgroup</code>
+
+The <code class=“html-element”>header</code> element is not heading content itself although it is likely to contain heading content.
+
+### Phrasing Content
+
+Phrasing content is a subset of flow content that is the text of the document as well as elements that mark up that text at the intra-paragraph level.
+
+- <code class=“html-element”>a</code>
+- <code class=“html-element”>abbr</code>
+- <code class=“html-element”>area</code> (if it is a descendant of a <code class=“html-element”>map</code> element)
+- <code class=“html-element”>audio</code>
+- <code class=“html-element”>b</code>
+- <code class=“html-element”>bdi</code>
+- <code class=“html-element”>bdo</code>
+- <code class=“html-element”>br</code>
+- <code class=“html-element”>button</code>
+- <code class=“html-element”>canvas</code>
+- <code class=“html-element”>cite</code>
+- <code class=“html-element”>code</code>
+- <code class=“html-element”>data</code>
+- <code class=“html-element”>datalist</code>
+- <code class=“html-element”>del</code>
+- <code class=“html-element”>dfn</code>
+- <code class=“html-element”>em</code>
+- <code class=“html-element”>embed</code>
+- <code class=“html-element”>i</code>
+- <code class=“html-element”>iframe</code>
+- <code class=“html-element”>img</code>
+- <code class=“html-element”>input</code>
+- <code class=“html-element”>ins</code>
+- <code class=“html-element”>kbd</code>
+- <code class=“html-element”>label</code>
+- <code class=“html-element”>link</code> (if it is allowed in the body)
+- <code class=“html-element”>map</code>
+- <code class=“html-element”>mark</code>
+- <code class=“html-element”>math</code>
+- <code class=“html-element”>menu</code>
+- <code class=“html-element”>meta</code> (if the <code class=“html-attribute”>itemprop</code> attribute is present)
+- <code class=“html-element”>meter</code>
+- <code class=“html-element”>noscript</code>
+- <code class=“html-element”>object</code>
+- <code class=“html-element”>output</code>
+- <code class=“html-element”>picture</code>
+- <code class=“html-element”>progress</code>
+- <code class=“html-element”>q</code>
+- <code class=“html-element”>ruby</code>
+- <code class=“html-element”>s</code>
+- <code class=“html-element”>samp</code>
+- <code class=“html-element”>script</code>
+- <code class=“html-element”>select</code>
+- <code class=“html-element”>selectedcontent</code> (if it is a descendant of a <code class=“html-element”>button</code> in a <code class=“html-element”>select</code>)
+- <code class=“html-element”>slot</code>
+- <code class=“html-element”>small</code>
+- <code class=“html-element”>span</code>
+- <code class=“html-element”>strong</code>
+- <code class=“html-element”>sub</code>
+- <code class=“html-element”>sup</code>
+- <code class=“html-element”>svg</code>
+- <code class=“html-element”>template</code>
+- <code class=“html-element”>textarea</code>
+- <code class=“html-element”>time</code>
+- <code class=“html-element”>u</code>
+- <code class=“html-element”>var</code>
+- <code class=“html-element”>video</code>
+- <code class=“html-element”>wbr</code>
+- automonous custom elements
+- text
+
+### Embedded Content
+
+Embedded content is a subset of flow content that imports another resource into the document, or content from another vocabulary that is inserted into the document.
+
+- <code class=“html-element”>audio</code>
+- <code class=“html-element”>canvas</code>
+- <code class=“html-element”>embed</code>
+- <code class=“html-element”>iframe</code>
+- <code class=“html-element”>img</code>
+- <code class=“html-element”>math</code>
+- <code class=“html-element”>object</code>
+- <code class=“html-element”>picture</code>
+- <code class=“html-element”>svg</code>
+- <code class=“html-element”>video</code>
+
+### Interactive Content
+
+Interactive content is a subset of flow content that is specifically intended to user interaction.
+
+- <code class=“html-element”>a</code> (if the <code class=“html-attribute”>href</code> attribute is present)
+- <code class=“html-element”>audio</code> (if the <code class=“html-attribute”>controls</code> attribute is present)
+- <code class=“html-element”>button</code>
+- <code class=“html-element”>details</code>
+- <code class=“html-element”>embed</code>
+- <code class=“html-element”>iframe</code>
+- <code class=“html-element”>img</code> (if the <code class=“html-attribute”>usemap</code> attribute is present)
+- <code class=“html-element”>input</code> (if the <code class=“html-attribute”>type</code> attribute is not in the hidden state)
+- <code class=“html-element”>label</code>
+- <code class=“html-element”>select</code>
+- <code class=“html-element”>textarea</code>
+- <code class=“html-element”>video</code> (if the <code class=“html-attribute”>controls</code> attribute is present)
+
+## Starting an HTML Document
+
+### DOCTYPE Preamble
+
+The first line of your <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document should contain the following line:
+
+<figure>
+	<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+</figure>
+
+This is a required preamble in your <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document that tells a user’s browser that this is an <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document type. This helps ensure that the browser renders the page accurately.
+
+<a href-=”https://html.spec.whatwg.org/multipage/syntax.html#syntax-doctype“>DOCTYPE Preample Syntax Standard, WHATWG</a>
+
+### <code class="html-element">html</code> Element
+
+The <code class="html-element">html</code> element represents the top-level, or <em>root</em>, element of an <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. Each document can have only one html element and all other elements must be a descendent of this element.
+
+It is best practice to specify the main language of the document using the <code class="html-attribute">lang</code> attribute on the root <code class="html-element">html</code> element. This helps accessibility tools, such as screen readers, to determine the correct usage and pronunciation.
+
+The <code class="html-attribute">lang</code> attribute must contain a valid <abbr title=“Internet Engineering Task Force”>IETF</abbr> <abbr title=“Best Current Practice”>BCP</abbr> 47 language tag or an empty string. An empty string indicates that the primary language is unknown. The <a class=“link-external”  href=“https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry”>list of language tags</a> is kept in the <abbr title=“Internet Assigned Numbers Authority”>IANA</abbr> Registry.
+
+For English, the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document should now look like this:
+
+<figure>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=“en”&gt;
+&lt;/html&gt;</code></pre>
+</figure>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-html-element”><code class="html-element">html</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://www.w3.org/International/articles/language-tags/index.en”>Language tags in HTML and XML, W3C</a>
+
+## Document Metadata
+
+### <code class="html-element">head</code> Element
+
+The <code class="html-element">head</code> element represents a collection of metadata for the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. This includes machine-readable information such as a title, description, keywords, author, character encoding, style sheets, or scripts.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-head-element”><code class="html-element">head</code> Element Standard, WHATWG</a>
+
+### <code class="html-element">title</code> Element
+
+The <code class="html-element">title</code> element represents the document’s title or name. This title will be shown in a browser’s title bar or the tab of the page. The <code class="html-element">title</code> element must reside within the <code class="html-element">head</code> element. Each document can have no more than one <code class="html-element">title</code> element. In most cases, the <code class="html-element">title</code> element is required.
 
+The title should be a standalone title that identifies the document even if it weren’t being viewed in a browser.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-title-element”><code class="html-element">title</code> Element Standard, WHATWG</a>
+
+### <code class="html-element">base</code> Element
+
+The <code class="html-element">base</code> element specifies a <abbr title=“Uniform Resource Locator”>URL</abbr> that is the base for all <em>relative</em> <abbr title=“Uniform Resource Locators”>URLs</abbr> in the document. Each document can have no more than one <code class="html-element">base</code> element. The <code class="html-element">base</code> element must reside within the <code class="html-element">head</code> element.
+
+In the following example, the link in the body will take the user to <code>https://www.website.com/articles.html</code>.
+
+<figure>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=“en”&gt;
+&lt;/html&gt;
+&lt;head&gt;
+	&lt;title&gt;My Website Title&lt;/head&gt;
+	&lt;base href=“https://www.website.com/”&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;p&gt;
+		Please see the &lt;a href=“articles.html”&gt;articles&lt;a&gt; page.
+	&lt;/p&gt;
+&lt;body&gt;</code></pre>
+</figure>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-base-element”><code class="html-element">base</code> Element Standard, WHATWG</a>
+
+### <code class="html-element">link</code> Element
+
+The <code class="html-element">link</code> element allows you to link an <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document to another resource such as a <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr> style sheet or a favicon. One or both of the <code class="html-attribute">href</code> or <code class="html-attribute">imagesrcset</code> attributes must be present.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-link-element”><code class="html-element">link</code> Element Standard, WHATWG</a>
+
+### <code class="html-element">meta</code> Element
+
+The <code class="html-element">meta</code> element represents various kinds of metadata that cannot be expressed using the <code class="html-element">title</code>, <code class="html-element">base</code>, <code class="html-element">link</code>, <code class="html-element">style</code>, and <code class="html-element">script</code> elements. This includes information such as a document description, keywords, author, character encoding, and viewport setup. The <code class="html-element">meta</code> element typically resides within the <code class="html-element">head</code> element.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-meta-element”><code class="html-element">meta</code> Element Standard, WHATWG</a>
+
+### <code class="html-element">style</code> Element
+
+The <code class="html-element">style</code> element embeds <abbr class="initialism" title="Cascading Style Sheets">CSS</abbr> styling inside the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. The <code class="html-element">style</code> element must reside within the <code class="html-element">head</code> element.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-style-element”><code class="html-element">style</code> Element Standard, WHATWG</a>
+
+## Sections
+
+The <code class="html-element">body</code> element represents the contents of the document. In conforming documents, there is only one <code class="html-element">body</code> element. The <code class="html-attribute">document.body</code> IDL attribute provides scripts with easy access to a document’s <code class="code-html-element">body</code> element.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-body-element”><code class="html-element">body</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">article</code> element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+
+When <code class="html-element">article</code> elements are nested, the inner <code class="html-element">article</code> elements represent articles that are in principle related to the contents of the outer <code class="html-element">article</code>. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as <code class="html-element">article</code> elements nested within the <code class="html-element">article</code> element for the blog entry.
+
+Author information associated with an <code class="html-element">article</code> element (q.v. the <code class="html-element">address</code> element) does not apply to nested <code class="html-element">article</code> elements.
+
+When the main content of the page (i.e. excluding footers, headers, navigation blocks, and sidebars) is all one single self-contained composition, that content may be marked with an <code class="html-element">article</code>, but it is technically redundant in that case (since it’s self-evident that the page is a single composition, as it is a single document).
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-article-element”><code class="html-element">article</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">section</code> element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content, typically with a heading. Examples of sections would be chapters, the various tabbed pages in a tabbed dialog box, or the numbered sections of a thesis. A web site’s home page could be split into sections for an introduction, news items, and contact information.
+
+Authors are encouraged to use the <code class="html-element">article</code> element instead of the <code class="html-element">section</code> element when it would make sense to syndicate the contents of the element.
+
+The <code class="html-element">section</code> element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the <code class="html-element">div</code> element instead. A general rule is that the <code class="html-element">section</code> element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-section-element”><code class="html-element">section</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">nav</code> element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
+
+Not all groups of links on a page need to be in a <code class="html-element">nav</code> element — the element is primarily intended for sections that consist of major navigation blocks. In particular, it is common for footers to have a short list of links to various pages of a site, such as the terms of service, the home page, and a copyright page. The <code class="html-element">footer</code> element alone is sufficient for such cases; while a <code class="code-html-element">nav</code> element can be used in such cases, it is usually unnecessary.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-nav-element”><code class="html-element">nav</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">aside</code> element represents a section of a page that consists of content that is tangentially related to the content around the <code class="html-element">aside</code> element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+
+The element can be used for typographical effects like pull quotes or sidebars, for advertising, for groups of <code class="html-element">nav</code> elements, and for other content that is considered separate from the main content of the page.
+
+It’s not appropriate to use the <code class="html-element">aside</code> element just for parentheticals, since those are part of the main flow of the document.
+
+<aside>
+	This is text inside of the <code class="html-element">aside</code> element. Use this to check the formatting, look, and feel of this section of text. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+</aside>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-aside-element”><code class="html-element">aside</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> elements represent headings for their sections. The semantics and meaning of these elements are defined in the section on headings and outlines. These elements have a heading level given by the number in their name. The heading level corresponds to the levels of nested sections. The <code class="html-element">h1</code> element is for a top-level section, <code class="html-element">h2</code> for a subsection, <code class="html-element">h3</code> for a sub-subsection, and so on.
+
+<h1>Heading 1 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h1>
+
+<h2>Heading 2 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h2>
+
+<h3>Heading 3 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h3>
+
+<h4>Heading 4 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h4>
+
+<h5>Heading 5 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h5>
+
+<h6>Heading 6 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h6>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements”><code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">hgroup</code> element represents a heading and related content. The element may be used to group an <code class="html-element">h1</code>–<code class="html-element">h6</code> element with one or more <code class="html-element">p</code> elements containing content representing a subheading, alternative title, or tagline.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-hgroup-element”><code class="html-element">hgroup</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">header</code> element represents a group of introductory or navigational aids. A <code class="code-html-element">header</code> element is intended to usually contain a heading (an <code class="html-element">h1</code>–<code class="html-element">h6</code> element or an <code class="html-element">hgroup</code> element), but this is not required. The <code class="html-element">header</code> element can also be used to wrap a section’s table of contents, a search form, or any relevant logos.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-header-element”><code class="html-element">header</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">footer</code> element represents a footer for its nearest ancestor sectioning content element, or for the <code class="html-element">body</code> element if there is no such ancestor. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+
+When the <code class="html-element">footer</code> element contains entire sections, they represent appendices, indices, long colophons, verbose license agreements, and other such content.
+
+Contact information for the author or editor of a section belongs in an <code class="html-element">address</code> element, possibly itself inside a <code class="html-element">footer</code>. Bylines and other information that could be suitable for both a <code class="html-element">header</code> or a <code class="html-element">footer</code> can be placed in either (or neither). The primary purpose of these elements is merely to help the author write self-explanatory markup that is easy to maintain and style; they are not intended to impose specific structures on authors.
+
+Footers don’t necessarily have to appear at the end of a section, though they usually do. When there is no ancestor sectioning content element, then it applies to the whole page.
+
+The <code class="html-element">footer</code> element is not itself sectioning content; it doesn’t introduce a new section.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-footer-element”><code class="html-element">footer</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">address</code> element represents the contact information for its nearest <code class="html-element">article</code> or <code class="html-element">body</code> element ancestor. If that is the <code class="html-element">body</code> element, then the contact information applies to the document as a whole.
+
+The <code class="html-element">address</code> element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The <code class="html-element">p</code> element is the appropriate element for marking up postal addresses in general.)
+
+The <code class="html-element">address</code> element must not contain information other than contact information.
+
+Typically, the <code class="html-element">address</code> element would be included along with other information in a <code class="html-element">footer</code> element.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-address-element”><code class="html-element">address</code> Element Standard, WHATWG</a>
+
+## Grouping Content
+
+The <code class="html-element">p</code> element represents a paragraph. Typically a paragraph is represented by blocks of text separated by a new line. However, it would be just as appropriate to separate paragraphs using an inline pilcrow (¶).
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-p-element”><code class="html-element">p</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">hr</code> element represents a paragraph-level thematic break such as a scene change in a story or a transition to another topic within a section of a reference book. It can also represent a separator between a set of options of a <code class="html-element">select</code> element. Following is an example of an <code class="html-element">hr</code> element.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-hr-element”><code class="html-element">hr</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">pre</code> element represents a block of preformatted text in which structure is represented by typographic conventions rather than by elements.
+
+One example of using the pre element is computer code. In this case, the pre element can be used with the <code class="html-element">code</code> element.
+<pre><code class="code-block">function testIfTrue(b) {
+if (b){
+    return “It is true!”;
+}
+return “It is false.”;
+}
+console.log(testIfTrue(true));</code></pre>
+To represent a block of computer output, the pre element can be used with the <code class="html-element">samp</code> element.
+
+The <code class="html-element">kbd</code> element can be used within a pre element to indicate text that the user is to enter.
+
+Another example of using the <code class="html-element">pre</code> element is ASCII art:
 <pre>
   ._,-,_.        _    ________    _       ______    __
   ||| |||       / \  |__    __|  / \     |   _  \  |  |
@@ -728,25 +528,438 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</pre>
 ./ /| |\ \.  /  ___  \  |  |  /  ___  \  |  |\  \  |  |
 |./ :_: \.| /__/   \__\ |__| /__/   \__\ |__| \__\ |__|</pre>
 
-		<h2>Code</h2>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-pre-element”><code class="html-element">pre</code> Element Standard, WHATWG</a>
 
-		<p>
-			If you have a fragment of computer code, use the <code class="code-html-element">code</code> element. This could be an XML element name, a filename, a computer program, or any other string that a computer would recognize.
-		</p>
+---
 
-		<p>
-			There is no formal way to indicate the language of computer code being marked up. Authors who wish to mark <code class="code-html-element">code</code> elements with the language used, e.g. so that syntax highlighting scripts can use the right rules, can use the class attribute, e.g. by adding a class prefixed with "language-" to the element.
-		</p>
+The <code class="html-element">blockquote</code> element represents a section that is quoted from another source. Content inside a <code class="html-element">blockquote</code> Must be quoted from another source, whose address, if it has one, may be cited in the <code class="html-attribute">cite</code> attribute.
 
-		<p>
-			The <code class="code-html-element">code</code> element can also be used in conjunction with the <code class="code-html-element">pre</code> element.
-		</p>
+Attribution for the quotation must be placed outside the <code class="html-element">blockquote</code> element.
 
-		<p>
-			Following is a computer code example.
-		</p>
+Consider using the <code class="html-element">blockquote</code> element inside a <code class="html-element">figure</code> element and using the <code class="html-element">figcaption</code> element to indicate the quote attribution.
 
-<pre><code class="code-block">function testIfTrue(b) {
+For longer quotes with multiple paragraphs, use the <code class="html-element">p</code> element inside the <code class="html-element">blockquote</code> element. For shorter quotes with only one paragraph, you do not need to use the <code class="html-element">p</code> element.
+
+The <code class="html-element">blockquote</code> element is not appropriate for representing a conversation between multiple people. It is best to use the <code class="html-element">p</code> element for this.
+
+Following is a basic example of using the <code class="html-element">blockquote</code> element.
+<blockquote cite="https://practicaltypography.com/what-is-good-typography.html">
+	Good typography is measured by how well it reinforces the meaning of the text, not by some abstract scale of merit. Typographic choices that work for one text won’t necessarily work for another. Corollary: good typographers don’t rely on rote solutions. One size never fits all.
+</blockquote>
+<p>
+	— Matthew Butterick
+</p>
+
+Following is an example of using the <code class="html-element">blockquote</code> element inside of the <code class="html-element">figure</code> element and using the <code class="html-element">figcaption</code> element for the attribution.
+
+<figure>
+	<blockquote cite="https://practicaltypography.com/what-is-good-typography.html">
+		Good typography is measured by how well it reinforces the meaning of the text, not by some abstract scale of merit. Typographic choices that work for one text won’t necessarily work for another. Corollary: good typographers don’t rely on rote solutions. One size never fits all.
+	</blockquote>
+	<figcaption>
+		— Matthew Butterick
+	</figcaption>
+</figure>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-blockquote-element”><code class="html-element">blockquote</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">ol</code> element represents a list of items where the items have been intentionally ordered such that changing the order would change the meaning. Each item of the list should be inside a <code class="html-element">li</code> element.
+
+Following is an example using the <code class="html-element">ol</code> element.
+<ol>
+	<li>List item. </li>
+	<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+		<ol>
+			<li>List item. </li>
+			<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+			<ol>
+				<li>List item. </li>
+				<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+					<ol>
+						<li>List item. </li>
+						<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+						<li>List item. </li>
+					</ol>
+				</li>
+				<li>List item. </li>
+				<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+				<li>List item. </li>
+				<li>List item. </li>
+				<li>List item. </li>
+				<li>List item. </li>
+				<li>List item. </li>
+				<li>List item. </li>
+				<li>List item. </li>
+				<li>List item. </li>
+			</ol>
+			</li>
+			<li>List item. </li>
+			<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+			<li>List item. </li>
+			<li>List item. </li>
+			<li>List item. </li>
+			<li>List item. </li>
+			<li>List item. </li>
+			<li>List item. </li>
+			<li>List item. </li>
+			<li>List item. </li>
+		</ol>
+	</li>
+	<li>List item. </li>
+	<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+	<li>List item. </li>
+	<li>List item. </li>
+	<li>List item. </li>
+	<li>List item. </li>
+	<li>List item. </li>
+	<li>List item. </li>
+	<li>List item. </li>
+	<li>List item. </li>
+</ol>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-ol-element”><code class="html-element">ol</code> Element Standard, WHATWG</a>
+
+I SHOULD BE ABLE TO USE THE VALUE ATTRIBUTE ON ANY ITEM TO RE-START THE NUMBERING. BUT IT DOESN’T SEEM TO WORK IN OBSIDIAN…….
+
+---
+
+The <code class="html-element">ul</code> element represents a list of items where the order of the items is not important. Each item of the list should be inside a <code class="html-element">li</code> element.
+
+Following is an example using the <code class="html-element">ul</code> element.
+<ul>
+	<li>List item. </li>
+	<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+		<ul>
+			<li>List item. </li>
+			<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+			<ul>
+				<li>List item. </li>
+				<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+					<ul>
+						<li>List item. </li>
+						<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+						<li>List item. </li>
+						<li>List item. </li>
+					</ul>
+				</li>
+				<li>List item. </li>
+				<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+			</ul>
+			</li>
+			<li>List item. </li>
+			<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+		</ul>
+	</li>
+	<li>List item. </li>
+	<li>List item. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.</li>
+</ul>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-ul-element”><code class="html-element">ul</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">menu</code> element represents a toolbar consisting of its contents in the form of an unordered list of items, each of which represents a command that the user can perform or activate. Each item of the list should be inside a <code class="html-element">li</code> element. The <code class="html-element">menu</code> element is simply a semantic alternative to the <code class="html-element">ul</code> element to express an unordered list of commands.
+
+It is a little unclear in the HTML standard, but it seems as if the <code class="html-element">menu</code> element should not be used for a list of navigational links such as is common at the top of many websites.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-menu-element”><code class="html-element">menu</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">li</code> element represents a list item. It should typically be the child of an <code class="html-element">ol</code>, <code class="html-element">ul</code>, or <code class="html-element">menu</code> element.
+
+The <code class="html-attribute">value</code> attribute, if present, must be a valid integer. It is used to determine the ordinal value of the list item when the list is an <code class="html-element">ol</code> list.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-li-element”><code class="html-element">li</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">dl</code> element represents an association list consisting of zero or more name-value groups (a description list). A name-value group consists of one or more names (<code class="html-element">dt</code> elements) followed by one or more values (<code class="html-element">dd</code> elements). Within a single <code class="html-element">dl</code> element, there should not be more than one <code class="html-element">dt</code> element for each name.
+
+Name-value groups may be terms and definitions, metadata topics and values, questions and answers, or any other groups of name-value data.
+
+The values within a group are alternatives; multiple paragraphs forming part of the same value must all be given within the same <code class="html-element">dd</code> element.
+
+The <code class="html-element">div</code> element can be wrapped around each name-value group to aid in styling.
+
+The <code class="html-element">dt</code> element represents the term, name, or part of a term-description group in a description list (<code class="html-element">dl</code> element). The <code class="html-element">dt</code> element itself, when used in a <code class="html-element">dl</code> element, does not indicate that its contents are a term being defined, but this can be indicated using the <code class="html-element">dfn</code> element.
+
+The <code class="html-element">dd</code> element represents the description, definition, or value part of a term-description group in a description list (<code class="html-element">dl</code> element). Each <code class="html-element">dt</code> element can have multiple <code class="html-element">dd</code> elements providing alternate descriptions or values for the term.
+
+Below is an example of a description list used to show metadata.
+<dl>
+	<dt>Item</dt>
+	<dd>My Web Page</dd>
+	<dt>Date Created</dt>
+	<dd><time datetime="2024-01-01 08:30"></time>January 1, 2024 8:30a.m.</dd>
+	<dt>Date Updated</dt>
+	<dd><time datetime="2024-01-18 13:30"></time>January 18, 2024 1:30p.m.</dd>
+	<dt>Authors</dt>
+	<dd>Jane Doe</dd>
+	<dd>John Doe</dd>
+	<dt>Keywords</dt>
+	<dd>Telecaster</dd>
+	<dd>Stratocaster</dd>
+	<dd>Les Paul</dd>
+</dl>
+Description lists are also commonly used with the <code class="html-element">dfn</code> element to define a list of terms. See the example below.
+<dl>
+	<dt><dfn>Hackneyed</dfn></dt>
+	<dd>Something is considered hackneyed when it is not interesting, funny, etc., because of being used too often; in other words, it’s neither fresh nor original.</dd>
+	<dt><dfn>Leitmotif</dfn></dt>
+	<dd>A leitmotif is a dominant recurring theme—something (such as a melody, an idea, or a phrase) repeated many times throughout a book, story, opera, etc.</dd>
+	<dt><dfn>Tome</dfn></dt>
+	<dd>Tome is a formal word for a book, and especially a very large, thick, often scholarly book.</dd>
+	<dt><dfn>Cerulean</dfn></dt>
+	<dd>Cerulean describes things whose blue color resembles the blue of a clear sky.</dd>
+</dl>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-dl-element”><code class="html-element">dl</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-dt-element”><code class="html-element">dt</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-dd-element”><code class="html-element">dd</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">figure</code> element represents some flow content, optionally with a caption, that is self-contained and is typically referenced as a single unit from the main flow of the document. This does not necessarily mean that the element is independent.
+
+The <code class="html-element">figure</code> element can be used to annotate illustrations, diagrams, photos, code listings, block quotes, etc.
+
+If a <code class="html-element">figure</code> element is referenced by its relative position (“in the photo above” or “as the next figure shows”), then moving the figure would disrupt the page’s meaning. Authors are encouraged to consider using labels to refer to figures.
+
+The first <code class="html-element">figcaption</code> element child of the <code class="html-element">figure</code> element, if any, represents the caption or legend of the <code class="html-element">figure</code> element’s contents.
+
+Following is an example of the <code class="html-element">figure</code> element containing computer code.
+
+<figure id="l4"><figcaption>Listing 4. The primary core interface API declaration.</figcaption><pre><code>interface PrimaryCore { boolean verifyDataLine(); undefined sendData(sequence&lt;byte> data); undefined initSelfDestruct(); }</code></pre> </figure>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-figure-element”><code class="html-element">figure</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-figcaption-element”><code class="html-element">figcaption</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">main</code> element represents the dominant contents of the document. A document must not have more than one <code class="html-element">main</code> element that does not have the <code class="html-attribute">hidden</code> attribute specified.
+
+A hierarchically correct <code class="html-element">main</code> element is one whose ancestor elements are limited to <code class="html-element">html</code>, <code class="html-element">body</code>, <code class="html-element">div</code>, <code class="html-element">form</code> without an accessible name, and autonomous custom elements.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-main-element”><code class="html-element">main</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">search</code> element represents a part of a document or application that contains a set of form controls or other content related to performing a search or filtering operation. This could be a search of the web site or application; a way of searching or filtering search results on the current web page; or a global or Internet-wide search function.
+
+It is not appropriate to use the <code class="html-element">search</code> element just for presenting search results, though suggestions and links as part of “quick search” results can be included as part of a search feature. Rather, a returned web page of search results would instead be expected to be presented as part of the main content of that web page.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-search-element”><code class="html-element">search</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">div</code> element has no special meaning. It represents its children. It can be used with the <code class="html-attribute">class</code>, <code class="html-attribute">lang</code>, and <code class="html-attribute">title</code> attributes to mark up semantics common to a group of consecutive elements. It can also be used in a <code class="html-element">dl</code> element wrapping groups of <code class="html-element">dt</code> and <code class="html-element">dd</code> elements.
+
+Authors are encouraged to view the <code class="html-element">div</code> element as a last resort for when no other element is suitable. Use of more appropriate elements instead of the <code class="html-element">div</code> element leads to better accessibility for readers and easier maintainability for authors.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-div-element”><code class="html-element">div</code> Element Standard, WHATWG</a>
+
+## Text-Level Semantics
+
+If an a element has an <code class="html-attribute">href</code> attribute, then it represents a hyperlink labeled by its contents.
+
+If an <code class="html-element">a</code> element does not hav an <code class="html-attribute">href</code> attribute, then the element represents a placeholder for where a link might otherwise have been placed.
+
+The <code class="html-attribute">target</code>, <code class="html-attribute">download</code>, <code class="html-attribute">ping</code>, <code class="html-attribute">rel</code>, <code class="html-attribute">hreflang</code>, <code class="html-attribute">type</code>, and <code class="html-attribute">referrerpolicy</code> attributes must be omitted if the <code class="html-attribute">href</code> attribute is not present.
+
+If the <code class="html-attribute">itemprop</code> attribute is specified on an <code class="html-element">a</code> element, then the <code class="html-attribute">href</code> attribute must also be specified.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-a-element”><code class="html-element">a</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">em</code> element represents stress emphasis of its contents. The level of stress that a particular piece of content has is given by its number of ancestor <code class="html-element">em</code> elements.
+
+The <code class="html-element">em</code> element is not a generic italics element. Sometimes, text is intended to stand out from the rest of the paragraph, as if it was in a different mood or voice. For this, the <code class="html-element">i</code> element is more appropriate.
+
+The <code class="html-element">em</code> element is not intended to convey importance; for that purpose, the <code class="html-element">strong</code> element is more appropriate.
+
+This is a test to <em>stress emphasis</em> of some text.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-em-element”><code class="html-element">em</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">strong</code> element represents strong importance, seriousness, or urgency for its contents.
+
+The <code class="html-element">strong</code> element can be used in a heading, caption, or paragraph to distinguish the part that really matters from other parts that might be more detailed.
+
+The <code class="html-element">strong</code> element can be used to mark up a warning or caution notice. It can be used to denote contents that the user needs to see sooner than other parts of the document.
+
+The relative level of importance of a piece of content is given by its number of ancestor <code class="html-element">strong</code> elements; each <code class="html-element">strong</code> element increases the importance of its contents.
+
+This is a test of <strong>some very strong text</strong> for testing.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-strong-element”><code class="html-element">strong</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">small</code> element represents side comments such as small print. This is typically used for disclaimers, caveats, legal restrictions, or copyrights. Small print is also sometimes used for attribution, or for satisfying licensing requirements.
+
+The <code class="html-element">small</code> element does not de-emphasize or lower the importance of text emphasized by the <code class="html-element">em</code> element or marked as important with the <code class="html-element">strong</code> element.
+
+The <code class="html-element">small</code> element should not be used for extended spans of text, such as multiple paragraphs, lists, or section of text; it is only intended for short runs of text.
+
+The <code class="html-element">small</code> element must not be used for subheadings; for that purpose, use the <code class="html-element">hgroup</code> element.
+
+The <code class="html-element">small</code> element is different from a sidebar, which might contain multiple paragraphs and is removed from the main flow of the text. For this purpose, consider using the <code class="html-element">aside</code> element.
+
+This is a test of some <small>side comments like a disclaimer</small> that we may need.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-small-element”><code class="html-element">small</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">s</code> element represents contents that are no longer accurate or no longer relatant.
+
+The <code class="html-element">s</code> element is not appropriate when indicating document edits. To mark a span of text as having been removed from a document, use the <code class="html-element">del</code> element.
+
+This is a test of some <s>text that has been removed</s> and is no longer needed.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-s-element”><code class="html-element">s</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">cite</code> element represents the title of a work (book, paper, essay, poem, score, song, script, film, TV show, game, sculpture, painting, theater production, play, opera, musical, exhibition, legal case report, computer program, etc.). This can be a work that is being quoted or reference in detail (such as a citation) or it can just be a work that is mentioned in passing.
+
+A person’s name is not the title of a work, so the <code class="html-element">cite</code> element should not be used to mark up people’s names.
+
+A citation is not a quote; for that purposes, use the <code class="html-element">q</code> element.
+
+As an example, the book <cite>Dracula</cite> by Bram Stoker is a great classic to read around Halloween.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-cite-element”><code class="html-element">cite</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">q</code> element represents some phrasing content quoted from another source.
+
+Quotation punctuation (quotation marks) that is quoting the contents of the element must not appear immediately before, after, or inside <code class="html-element">q</code> elements; they will be inserted into the rendering by the user agent.
+
+Content inside a <code class="html-element">q</code> element must be quoted from another source, whose address, if it has one, may be cited in the <code class="html-attribute">cite</code> attribute. The source may be fictional, as when quoting characters in a novel or screenplay.
+
+The <code class="html-element">q</code> element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the <code class="html-element">q</code> element For marking up sarcastic statements.
+
+The use of <code class="html-element">q</code> elements to mark up quotations is entirely optional; using explicit quotation punctuation without <code class="html-element">q</code> elements is just as correct.
+
+As an example using the <code class="code-html-element">q</code> element, according to Matthew Butterick, <q cite="https://practicaltypography.com/what-is-typography.html">typography is the visual component of the written word</q>.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-q-element”><code class="html-element">q</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">dfn</code> element represents the defining instance of a term. The paragraph, description list group, or section that is the nearest ancestor of the <code class="html-element">dfn</code> element must also contain the definition(s) for the term given by the <code class="html-element">dfn</code> element.
+
+If the <code class="html-element">dfn</code> element has a <code class="html-attribute">title</code> attribute, then the exact value of that attribute is the term being defined. Otherwise, if it contains exactly one element child node and no child text nodes, and that child element is an <code class="html-element">abbr</code> element with a <code class="html-attribute">title</code> attribute, then the exact value of <em>that</em> attribute is the term being defined. Otherwise, it is the descendant text content of the <code class="html-element">dfn</code> element That gives the term being defined.
+
+If the <code class="html-attribute">title</code> attribute of the <code class="html-element">dfn</code> element is present, then it must contain only the term being defined. The <code class="html-attribute">title</code> attribute of ancestor elements does to affect <code class="html-element">dfn</code> elements.
+
+An <code class="html-element">a</code> element that links to a <code class="html-element">dfn</code> element represents an instance of the term defined by the <code class="html-element">dfn</code> element.
+
+For example, a <dfn>raven</dfn> is a large, glossy-black bird (Corvus corax) that is widely distributed in northern parts of the northern hemisphere but now rare is most areas of the eastern and central U.S. and that differs from the closely related common crow chiefly in its larger size and wedge-shaped tail and in having the feathers of the throat narrow and pointed resulting in a shaggy appearance.
+
+It is also common to the the dfn element with a description list:
+<dl>
+	<dt><dfn>Hackneyed</dfn></dt>
+	<dd>Something is considered hackneyed when it is not interesting, funny, etc., because of being used too often; in other words, it’s neither fresh nor original.</dd>
+	<dt><dfn>Leitmotif</dfn></dt>
+	<dd>A leitmotif is a dominant recurring theme—something (such as a melody, an idea, or a phrase) repeated many times throughout a book, story, opera, etc.</dd>
+	<dt><dfn>Tome</dfn></dt>
+	<dd>Tome is a formal word for a book, and especially a very large, thick, often scholarly book.</dd>
+	<dt><dfn>Cerulean</dfn></dt>
+	<dd>Cerulean describes things whose blue color resembles the blue of a clear sky.</dd>
+</dl>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-dfn-element”><code class="html-element">dfn</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">abbr</code> element represents an abbreviation or acronym, optionally with its expansion. The <code class="html-attribute">title</code> attribute may be used to provide an expansion of the abbreviation. The attribute, if specified, must contain an expansion of the abbreviation and nothing else.
+
+If an abbreviation is pluralized, the expansion inside the <code class="html-attribute">title</code> attribute must match the plurality or singularity of the abbreviation inside the <code class="html-element">abbr</code> element.
+
+Abbreviations do not have to be marked up using this element. It is expected to be useful in the following cases:
+- Abbreviations for which the author wants to give expansions, where using the <code class="html-element">abbr</code> element  with a <code class="html-attribute">title</code> attribute is an alternative to including the expansion inline (e.g. in parentheses).
+- Abbreviations that are likely to be unfamiliar to the document's readers, for which authors are encouraged to either mark up the abbreviation using an <code class="html-element">abbr</code> element with a <code class="html-attribute">title</code> attribute or include the expansion inline in the text the first time the abbreviation is used.
+- Abbreviations whose presence needs to be semantically annotated, e.g. so that they can be identified from a style sheet and given specific styles, for which the <code class="html-element">abbr</code> element can be used without a <code class="html-attribute">title</code> attribute.
+
+Providing an expansion in a <code class="html-attribute">title</code> attribute once will not necessarily cause other <code class="html-element">abbr</code> elements in the same document with the same contents but without a <code class="html-attribute">title</code> attribute to behave as if they had the same expansion. Every <code class="html-element">abbr</code> element is independent.
+
+As an example, <abbr title=“HyperText Markup Language”>HTML</abbr> is the language used to construct this page.
+
+You can also use the <code class="html-element">dfn</code> element with the <code class="html-element">abbr</code> element to define an abbreviation. When first introduction an abbreviation and defining it, you may wish to write it as follows: In web design, <dfn>Cascading Style Sheets</dfn> (<abbr title=“Cascading Style Sheets”>CSS</abbr>) is a language used to describe the presentation of a document written in a markup language such as <abbr title=“HyperText Markup Language”>HTML</abbr>.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-abbr-element”><code class="html-element">abbr</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">ruby</code> element allows one or more spans of phrasing content to be marked with ruby annotations. Ruby annotations are short runs of text presented alongside base text, primarily used in East Asian typography as a guide for pronunciation or to include other annotations. In Japanese, this form of typography is also known as furigana.
+
+The <code class="html-element">rt</code> element marks the ruby text component of a ruby annotation.
+
+The <code class="html-element">rp</code> element can be used to provide parentheses or other content around a ruby text component of a ruby annotation, to be shown by user agents that don’t support ruby annotations.
+
+Since this HTML test page is geared toward the English language, we don’t go into much detail for the <code class="html-element">ruby</code> elements.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-ruby-element”><code class="html-element">ruby</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-rt-element”><code class="html-element">rt</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-rp-element”><code class="html-element">rp</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">data</code> element represents it contents, along with a machine-readable form of those contents in the <code class="html-attribute">value</code> attribute.
+
+The <code class="html-attribute">value</code> attribute must be present. It’s value must be a representation of the element’s contents in a machine-readable format.
+
+When the value is date or time related, the more specific <code class="html-element">time</code> element can be used instead.
+
+For example, you may have a list of products where the <code class="html-attribute">value</code> attribute contains product numbers:
+<ul>
+	<li><data value=“32175”>Fender Stratocaster</data></li>
+	<li><data value=“32284”>Fender Telecaster</data></li>
+	<li><data value=“35812”>Fender Mustang</data></li>
+</ul>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-data-element”><code class="html-element">data</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">time</code> element represents its contents, along with a machine-readable form of those contents in the <code class="html-attribute">datetime</code> attribute. The kind of content is limited to various kinds of dates, times, time-zone offsets, and durations.
+
+The <code class="html-attribute">datetime</code> attribute may be present. If present, its value must be a representation of the element’s contents in a machine-readable format.
+
+For example, the meeting is on <time datetime=“2025-10-20”>October 20, 2025</time>. To be more specific, you could say that the meeting is on <time datetime=“2025-10-20 15:30”>October 20, 2025 at 3:30<abbr title="post meridiem">pm</abbr></time>.
+
+ADD A LIST OF VALID DATETIME FORMATS HERE…………..
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-time-element”><code class="html-element">time</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">code</code> element represents a fragment of computer code. This could be an XML element name, a file name, a computer program, or any other string that a computer would recognize.
+
+There is nor formal way to indicate the language of computer code being marked up. Authors who wish to mark <code class="html-element">code</code> elements with the language used (so that syntax highlighting scripts can use the right rules) can use the <code class="html-attribute">class</code> attribute by adding a class prefixed with “<code>language-</code>“ to the element.
+
+The <code class="html-element">code</code> element can also be used in conjunction with the <code class="html-element">pre</code> element to format the code in accordance with the conventions of the code language used.
+
+Following is a computer code example.
+
+<pre><code>function testIfTrue(b) {
 if (b){
     return “It is true!”;
 }
@@ -754,176 +967,208 @@ return “It is false.”;
 }
 console.log(testIfTrue(true));</code></pre>
 
-		<h2>Computer Output</h2>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-code-element”><code class="html-element">code</code> Element Standard, WHATWG</a>
 
-		<p>
-			If you have a sample or quoted output from another program or computing system, use the <code class="code-html-element">samp</code> element.
-		</p>
+---
 
-		<p>
-			This element can be contrasted with the <code class="code-html-element">output</code> element, which can be used to provide immediate output in a web application.
-		</p>
+The <code class="html-element">var</code> element represents a variable. This could be an actual variable in a mathematical expression or programming context, and identifier representing a constant, a symbol identifying a physical quantity, a function parameter, or just be a term used as a placeholder in prose.
 
-		<p>
-			You may want to also review the usage of the <code class="code-html-element">pre</code>, <code class="code-html-element">kbd</code>, and <code class="code-html-element">code</code> elements.
-		</p>
+For mathematics, in particular for anything beyond the simplest of expressions, MathML (the <code class="html-element">math</code> element) is more appropriate. However, the <code class="html-element">var</code> element Can still be used to refer to specific variables that are then mentioned in MathML expressions.
 
-		<p>
-			You can have inline computer output such as, the computer said <samp>Select paper type in Tray 2.</samp> You can also have a block of sample output like below.
-		</p>
+For example, in electronics, <var>E</var> typically refers to potential difference, <var>I</var> refers to current, and <var>Ω</var> refers to resistance.
 
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-var-element”><code class="html-element">var</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">samp</code> element represents a sample or quoted output from another program or computing system.
+
+The <code class="html-element">samp</code> element can be contrasted with the <code class="html-element">output</code> element, which can be used to provide immediate output in a web application.
+
+As an inline example using the <code class="html-element">samp</code> element, the printer display read <samp>Paper Jam</samp> so I tossed the printer in the trash.
+
+For a block of sampled output, you may want to combine the <code class="html-element">samp</code> element with the <code class="html-element">pre</code> element as follows:
 <pre><samp>Last login: Tue Apr 12 09:10:17 2005 from mowmow.example.com on pts/1
 Linux demo 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189 #1 SMP Tue Feb 1 11:22:36 PST 2005 i686 unknown</samp></pre>
 
-		<h2>Computer Keystrokes</h2>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-samp-element”><code class="html-element">samp</code> Element Standard, WHATWG</a>
 
-		<p>
-			In order to represent user input, use the <code class="code-html-element">kbd</code> element. This is usually for keyboard input, although it may also be used to represent other input, such as voice commands.
-		</p>
+---
 
-		<p>
-			When the <code class="code-html-element">kbd</code> element is nested inside a <code class="code-html-element">samp</code> element, it represents the input as it was echoed by the system.
-		</p>
+The <code class="html-element">kbd</code> element represents user input (typically keyboard input, although it may also be used to represent other input, such as voice commands).
 
-		<p>
-			When the <code class="code-html-element">kbd</code> element contains a <code class="code-html-element">samp</code> element, it represents input based on system output, for example invoking a menu item.
-		</p>
+When a <code class="html-element">kbd</code> element is nested inside a <code class="html-element">samp</code> element, it represents the input as it was echoed by the system. As an example: if the program issues an error, it will output the command that you entered: <samp><kbd>print my-new-file.txt</kbd></samp>.
 
-		<p>
-			When the <code class="code-html-element">kbd</code> element is nested inside another <code class="code-html-element">kbd</code> element, it represents an actual key or other single unit of input as appropriate for the input mechanism.
-		</p>
+When a <code class="html-element">kbd</code> element <em>contains</em> a <code class="html-element">samp</code> element, it represents input based on system output, for example invoking a menu item. As an example: to create a new file, select <kbd><kbd><samp>File</samp></kbd> → <kbd><samp>New Document</samp></kbd></kbd>.
 
-		<p>
-			An actual keystroke example would be: press &nbsp;<kbd><kbd>command</kbd> + <kbd>C</kbd></kbd>&nbsp; to copy. Now let’s press the &nbsp;<kbd><kbd>option</kbd></kbd>&nbsp; key. And now, we press the &nbsp;<kbd><kbd>control</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>shift</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>tab</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>backspace</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>delete</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>esc</kbd></kbd>&nbsp; key. Time to press the &nbsp;<kbd><kbd>caps lock</kbd></kbd>&nbsp; key.
-		</p>
+When a <code class="html-element">kbd</code> element is nested inside another <code class="html-element">kbd</code> element, it represents an actual key or other single unit of input as appropriate for the input mechanism. As an example of specific keys to use, press <kbd><kbd>control</kbd> + <kbd>c</kbd></kbd> to copy.
 
-		<p>
-			List of some keystroke examples:
-		</p>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-kbd-element”><code class="html-element">kbd</code> Element Standard, WHATWG</a>
 
- 		<ul>
-			<li><kbd><kbd>control</kbd></kbd></li>
-			<li><kbd><kbd>option</kbd></kbd></li>
-			<li><kbd><kbd>command</kbd></kbd></li>
-			<li><kbd><kbd>shift</kbd></kbd></li>
-			<li><kbd><kbd>caps lock</kbd></kbd></li>
-			<li><kbd><kbd>tab</kbd></kbd></li>
-			<li><kbd><kbd>esc</kbd></kbd></li>
-			<li><kbd><kbd>backspace</kbd></kbd></li>
-			<li><kbd><kbd>delete</kbd></kbd></li>
-			<li><kbd><kbd>return</kbd></kbd></li>
-			<li><kbd><kbd>space</kbd></kbd></li>
-		</ul>
+---
 
-		<h2>Mathematical or Coding Variables</h2>
+The <code class="html-element">sup</code> element represents a superscript and the <code class="html-element">sub</code> element represents a subscript.
 
-		<p>
-			In order to represent a mathematical or coding variable, you can use the <code class="code-html-element">var</code> element. This could be an actual variable in a mathematical expression or programming context, an identifier representing a constant, a symbol identifying a physical quantity, a function parameter, or just be a term used as a placeholder in prose.
-		</p>
+These elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation for presentation’s sake. For example, it would be inappropriate for the <code class="html-element">sup</code> and <code class="html-element">sub</code> elements to be used in the name of the LaTeX document preparation system. In general, authors should use these elements only if the <em>absence</em> of those elements would change the meaning of the context.
 
-		<p>
-			For mathematics, in particular for anything beyond the simplest of expressions, MathML is more appropriate. However, the <code class="code-html-element">var</code> element can still be used to refer to specific variables that are then mentioned in MathML expressions.
-		</p>
+In certain languages, superscripts are part of the typographical conventions for some abbreviations.
 
-		<p>
-			As an example, <var>E</var> represents potential difference in the equation.
-		</p>
+The <code class="html-element">sub</code> element can be used inside a <code class="html-element">var</code> element for variables that have subscripts.
 
-		<h2>Time and Date</h2>
+Mathematical expressions often use subscripts and superscripts. Authors are encouraged to use MathML for marking up mathematics, but authors may opt to use <code class="html-element">sup</code> and <code class="html-element">sub</code> if detailed mathematical markup is not desired.
 
-		<p>
-			To represent a time and/or date, use the <code class="code-html-element">time</code> element. You can use the <code class="code-html-attribute">datetime</code> attribute to provide a machine-readable date and time which can be a local or global time.
-		</p>
+For example: one of the most common physics equations is <var>E</var> = <var>m</var><var>c</var><sup>2</sup>. The chemical formula for glucose is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>.
 
-		<p>
-			For example, this web page was created on <time datetime="2024-01-18 15:30"> January 18, 2024 at 3:30<abbr class="abbr-am-pm" title="post meridiem">pm</abbr></time> by the author. We may need to write the date with lining numerals, so we can do this: <time datetime="2024-01-18 15:30" class="nums-lnum-pnum"> January 18, 2024 at 3:30<abbr class="abbr-am-pm" title="post meridiem">pm</abbr></time>
-		</p>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-sub-and-sup-element”><code class="html-element">sub</code> and <code class="html-element">sup</code> Element Standard, WHATWG</a>
 
-		<h2>Data</h2>
+---
 
-		<p>
-			If you have data, you can represent it using the <code class="code-html-element">data</code> element. The <code class="code-html-attribute">value</code> attribute must be used to contain the machine-readable value of the data.
-		</p>
+The <code class="html-element">i</code> element represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose in a manner indicating a different quality of text, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a transliteration, a thought, or a ship name in Western texts.
 
-		<p>
-			The <code class="code-html-element">data</code> element can be used for several purposes.
-		</p>
+Terms in languages different from the main text should be annotated with <code class="html-attribute">lang</code> attributes (or, in XML, <code class="html-attribute">lang</code> attributes In the XML namespace).
 
-		<p>
-			When combined with microformats or the microdata attributes defined in this specification, the element serves to provide both a machine-readable value for the purposes of data processors, and a human-readable value for the purposes of rendering in a web browser. In this case, the format to be used in the <code class="code-html-attribute">value</code> attribute is determined by the microformats or microdata vocabulary in use.
-		</p>
+Authors can use the <code class="html-attribute">class</code> attribute on the <code class="html-element">i</code> element To identify why the element is being used, so that if the style of a particular use (e.g. dream sequences as opposed to taxonomic terms) is to be changed at a later date, the author doesn’t have to go through the entire document (or series of related documents) annotating each use.
 
-		<p>
-			The element can also, however, be used in conjunction with scripts in the page, for when a script has a literal value to store alongside a human-readable value. In such cases, the format to be used depends only on the needs of the script. (The <code class="code-html-attribute">data-*</code> attributes can also be useful in such situations.)
-		</p>
+Authors are encouraged to consider whether other elements might be more applicable than the <code class="html-element">i</code> element, for instance the <code class="html-element">em</code> element for marking up stress emphasis, or the <code class="html-element">dfn</code> element to mark up the defining instance of a term.
 
-		<p>
-			For example, the name of the file is <data value="spreadsheet.xlsx">spreadsheet.xlsx</data>.
-		</p>
+Style sheets can be used to format <code class="html-element">i</code> elements, just like any other element can be restyled. Thus, it is not the case that content in <code class="html-element">i</code> elements will necessarily be italicized.
 
-		<h2>Subscripts/Inferiors and Superscripts/Superiors</h2>
+Examples:
 
-		<p>
-		To represent a subscript use the <code class="code-html-element">sub</code> element. To represent a superscript, use the <code class="code-html-element">sup</code> element.
-		</p>
+The common raven, also known as the <i class=“taxonomy”>Corvus corax</i> is found in the northern hemisphere.
 
-		<p>
-			These elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation for presentation’s sake. For example, it would be inappropriate for the <code class="code-html-element">sub</code> and <code class="code-html-element">sup</code> elements to be used in the name of the LaTeX document preparation system. In general, authors should use these elements only if the absence of those elements would change the meaning of the content.
-		</p>
+When she arrived at the theater, a sense of <i lang=“fr”>déjà vu</i> overcame her as she recognized the stage.
 
-		<p>
-			The <code class="code-html-element">sub</code> element can be used inside a <code class="code-html-element">var</code> element, for variables that have subscripts.
-		</p>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-i-element”><code class="html-element">i</code> Element Standard, WHATWG</a>
 
-		<p>
-			Mathematical expressions often use subscripts and superscripts. Authors are encouraged to use MathML for marking up mathematics, but authors may opt to use <code class="code-html-element">sub</code> and <code class="code-html-element">sup</code> if detailed mathematical markup is not desired.
-		</p>
+---
 
-		<p>
-			On thing to note is that the <code class="code-html-element">sub</code> and <code class="code-html-element">sup</code> elements simply shrink the size of the default font and either lower or raise its position. It is best to use a font that includes built-in subscripts and superscripts using the Opentype <code>subs</code> and <code>sups</code> features.
-		</p>
+The <code class="html-element">b</code> element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede.
 
-		<p>
-			In addition to the Opentype <code>subs</code> and <code>sups</code> features, Opentype also specifies a <code>sinf</code> feature for scientific inferiors. Here are the definitions of each feature according to the official Opentype standard.
-		</p>
+As with the <code class="html-element">i</code> element, authors can use the <code class="html-attribute">class</code> attribute on the <code class="html-element">b</code> element To identify why the element is being used, so that if the style of a particular use is to be changed at a later date, the author doesn’t have to go through annotating each use.
 
-		<dl>
-			<dt><dfn>subs</dfn></dt>
-			<dd>The <code>subs</code> feature is used to present subscript forms.</dd>
-			<dd>An older definition is: The <code>subs</code> feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.</dd> 
-			<dt><dfn>sups</dfn></dt>
-			<dd>Replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).</dd>
-			<dt><dfn>sinf</dfn></dt>
-			<dd>Replaces lining or oldstyle figures (digits) with inferior figures (smaller glyphs which sit lower than the standard baseline, primarily for chemical or mathematical notation). May also replace glyphs for lowercase characters with alphabetic inferiors.</dd>
-		</dl>
+The b element should be used as a last resort when no other element is more appropriate. In particular, headings should use the <code class="html-element">h1</code> to <code class="html-element">h6</code> elements, stress emphasis should use the <code class="html-element">em</code> element, importance should be denoted with the <code class="html-element">strong</code> element, and text marked or highlighted should use the <code class="html-element">mark</code> element.
 
-		<p>
-			It’s challenging to determine the intended difference between the <code>subs</code> and <code>sinf</code> features. However, on the Glyphs app website, the provide a bit more direction. One difference is that <code>subs</code> is a change of semantic value and <code>sinf</code> does not allow a semantic change. In many fonts, the <code>subs</code> and <code>sinf</code> figures are identical; however, some will lower the position of <code>sinf</code> figures to accommodate chemical and mathematical writing a bit better.
-		</p>
+Style sheets can be used to format <code class="html-element">b</code> elements, just like any other element can be restyled. Thus, it is not the case that content in <code class="html-element">b</code> elements will necessarily be boldened.
 
-		<p>
-			A few examples are:
-		</p>
+Examples:
 
-		<ul>
-			<li><code class="code-html-element">sub</code> element using the Opentype <code>subs</code> feature: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></li>
-			<li><code class="code-html-element">sub</code> element using the Opentype <code>sinf</code> feature: C<sub class="sinf-test1">6</sub>H<sub class="sinf-test1">12</sub>O<sub class="sinf-test1">6</sub></li>
-			<li><code class="code-html-element">sup</code> element using the Opentype <code>sups</code> feature: <var>x</var><sup>6</sup>; or BIG<sup>50</sup></li>
-		</ul>
+This article describes the use of <b class=“keywords”>physics</b> in the design of <b class=“keywords”>guitars</b>.
 
-		<h2>Document Edits</h2>
+<hgroup>
+	<h1>Revolutionary Electric Guitar Released</h1>
+	<p>
+		<b class=“lede”>Bob’s Guitars has released an electric guitar that can play itself. Just ask it to play the solo to La Grange and away it goes!</b>
+	</p>
+</hgroup>
 
-		<p>
-			The <code class="code-html-element">ins</code> element represents an addition to the document. Maybe we <ins>missed a few words and</ins> need to edit a document.
-		</p>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-b-element”><code class="html-element">b</code> Element Standard, WHATWG</a>
 
-		<p>
-			The <code class="code-html-element">del</code> element represents a removal from the document. Maybe we <del>added too many words and</del> need to edit a document.
-		</p>
+---
+
+The <code class="html-element">u</code> element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.
+
+In most cases, another element is likely to be more appropriate: for marking stress emphasis, the <code class="html-element">em</code> element should be used; for marking key words or phrases either the <code class="html-element">b</code> element of the <code class="html-element">mark</code> element should be used, depending on the context; for marking book title, the <code class="html-element">cite</code> element should be used; for labeling text with explicit textual annotations, the <code class="html-element">ruby</code> element should be used; for technical terms, taxonomic designation, transliteration, a thought, or for labeling ship names in Western texts, the <code class="html-element">i</code> element should be used.
+
+The default rendering of the <code class="html-element">u</code> element in visual presentations clashes with the conventional rendering of hyperlinks (underlining). Authors are encouraged to avoid using the <code class="html-element">u</code> element Where it could be confused for a hyperlink.
+
+Examples:
+
+In this example, the <code class="html-element">u</code> element Is being used to indicate a misspelled word. I really like how the bossa nova <u>rythem</u> makes me feel.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-u-element”><code class="html-element">u</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">mark</code> element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context. When used in a quotation or other block of text referred to from the prose, it indicates a highlight that was not originally present but which has been added to bring the reader’s attention to a part of the text that might not have been considered important by the original author when the block was originally written, but which is now under previously unexpected scrutiny. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its likely relevance to the user’s current activity.
+
+Examples:
+
+??????????????????????????????
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-mark-element”><code class="html-element">mark</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">bdi</code> element represents a span of text that is to be isolated from its surroundings for the purposed of bidirectional text formatting.
+
+The <code class="html-element">bdo</code> element represents explicit text directionality formatting control for its children. It allows authors to override the Unicode bidirectional algorithm by explicitly specifying a direction override.
+
+Since this HTML test page is geared toward the English language, we don’t go into much detail for the <code class="html-element">bdi</code> and <code class="html-element">bdo</code> elements.
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-bdi-element”><code class="html-element">bdi</code> Element Standard, WHATWG</a>
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-bdo-element”><code class="html-element">bdo</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">span</code> element doesn’t mean anything on its own, but can be useful when used together with global attributes such as <code class="html-attribute">class</code>, <code class="html-attribute">lang</code>, or <code class="html-attribute">dir</code>. It represents its children.
+
+NEED EXAMPLES!!!!
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-span-element”><code class="html-element">span</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">br</code> element represents a line break.
+
+While line breaks are usually represented in visual media by physically moving subsequent text to a new line, a style sheet or user agent would be equally justified in causing line breaks to be rendered in a different manner, for instance as green dots, or as extra spacing.
+
+<code class="html-element">br</code> elements must be used only for line breaks that are actually part of the content, as in poems or addresses.
+
+<code class="html-element">br</code> elements must not be used for separating thematic groups in a paragraph.
+
+If a paragraph consists of nothing by a single <code class="html-element">br</code> element, it represents a placeholder blank line (e.g. as in a template). Such blank lines must not be used for presentation purposes.
+
+Any content inside <code class="html-element">br</code> elements must not be considered part of the surrounding text.
+
+The <code class="html-element">br</code> element has rendering requirements involving the bidirectional algorithm.
+
+Examples:
+
+A postal address could be marked up as:
+<p>
+	Jane Doe<br>
+	123 Street Rd.<br>
+	Anywhere, NY 12345
+</p>
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-br-element”><code class="html-element">br</code> Element Standard, WHATWG</a>
+
+---
+
+The <code class="html-element">wbr</code> element represents a line break opportunity.
+
+Any content inside <code class="html-element">wbr</code> elements must not be considered part of the surrounding text.
+
+The <code class="html-element">wbr</code> element has rendering requirements involving the bidirectional algorithm.
+
+EXAMPLES!!!!!!!!!!!!!!!!!!!
+
+<a class=“link-external” href=“https://html.spec.whatwg.org/#the-wbr-element”><code class="html-element">wbr</code> Element Standard, WHATWG</a>
+
+## Links
 
 
 
+## Edits
 
+
+## Embedded Content
+
+
+## Tabular Data
+
+
+## Forms
+
+
+## Interactive Elements
+
+
+## Scripting
+
+
+## Custom Elements
 
 
 
