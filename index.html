@@ -82,9 +82,9 @@
 			The first line of your <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document should contain the following line:
 		</p>
 
-		<figure>
-			<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
-		</figure>
+<figure>
+<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+</figure>
 
 		<p>
 			This is a required preamble in your <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document that tells a user’s browser that this is an <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document type. This helps ensure that the browser renders the page accurately.
@@ -94,15 +94,23 @@
 			<a href=”https://html.spec.whatwg.org/multipage/syntax.html#syntax-doctype“>DOCTYPE Preample Syntax Standard, WHATWG</a>
 		</p>
 
-### <code class="html-element">html</code> Element
+		<h3><code class="html-element">html</code> Element</h3>
 
-The <code class="html-element">html</code> element represents the top-level, or <em>root</em>, element of an <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. Each document can have only one html element and all other elements must be a descendent of this element.
+		<p>
+			The <code class="html-element">html</code> element represents the top-level, or <em>root</em>, element of an <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. Each document can have only one html element and all other elements must be a descendent of this element.
+		</p>
 
-It is best practice to specify the main language of the document using the <code class="html-attribute">lang</code> attribute on the root <code class="html-element">html</code> element. This helps accessibility tools, such as screen readers, to determine the correct usage and pronunciation.
+		<p>
+			It is best practice to specify the main language of the document using the <code class="html-attribute">lang</code> attribute on the root <code class="html-element">html</code> element. This helps accessibility tools, such as screen readers, to determine the correct usage and pronunciation.
+		</p>
 
-The <code class="html-attribute">lang</code> attribute must contain a valid <abbr title=“Internet Engineering Task Force”>IETF</abbr> <abbr title=“Best Current Practice”>BCP</abbr> 47 language tag or an empty string. An empty string indicates that the primary language is unknown. The <a class=“link-external”  href=“https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry”>list of language tags</a> is kept in the <abbr title=“Internet Assigned Numbers Authority”>IANA</abbr> Registry.
+		<p>
+			The <code class="html-attribute">lang</code> attribute must contain a valid <abbr title=“Internet Engineering Task Force”>IETF</abbr> <abbr title=“Best Current Practice”>BCP</abbr> 47 language tag or an empty string. An empty string indicates that the primary language is unknown. The <a class=“link-external”  href=“https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry”>list of language tags</a> is kept in the <abbr title=“Internet Assigned Numbers Authority”>IANA</abbr> Registry.
+		</p>
 
-For English, the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document should now look like this:
+		<p>
+			For English, the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document should now look like this:
+		</p>
 
 <figure>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -110,24 +118,36 @@ For English, the <abbr class="initialism" title="HyperText Markup Language">HTML
 &lt;/html&gt;</code></pre>
 </figure>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-html-element”><code class="html-element">html</code> Element Standard, WHATWG</a>
-<a class=“link-external” href=“https://www.w3.org/International/articles/language-tags/index.en”>Language tags in HTML and XML, W3C</a>
+		<ul>
+			<li><a class=“link-external” href=“https://html.spec.whatwg.org/#the-html-element”><code class="html-element">html</code> Element Standard, WHATWG</a></li>
+			<li><a class=“link-external” href=“https://www.w3.org/International/articles/language-tags/index.en”>Language tags in HTML and XML, W3C</a></li>
+		</ul>
 
-## Document Metadata
+		<h2>Document Metadata</h2>
 
-### <code class="html-element">head</code> Element
+		<h3><code class="html-element">head</code> Element</h3>
 
-The <code class="html-element">head</code> element represents a collection of metadata for the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. This includes machine-readable information such as a title, description, keywords, author, character encoding, style sheets, or scripts.
+		<p>
+			The <code class="html-element">head</code> element represents a collection of metadata for the <abbr class="initialism" title="HyperText Markup Language">HTML</abbr> document. This includes machine-readable information such as a title, description, keywords, author, character encoding, style sheets, or scripts.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-head-element”><code class="html-element">head</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-head-element”><code class="html-element">head</code> Element Standard, WHATWG</a>
+		</p>
 
-### <code class="html-element">title</code> Element
+		<h3><code class="html-element">title</code> Element</h3>
 
-The <code class="html-element">title</code> element represents the document’s title or name. This title will be shown in a browser’s title bar or the tab of the page. The <code class="html-element">title</code> element must reside within the <code class="html-element">head</code> element. Each document can have no more than one <code class="html-element">title</code> element. In most cases, the <code class="html-element">title</code> element is required.
+		<p>
+			The <code class="html-element">title</code> element represents the document’s title or name. This title will be shown in a browser’s title bar or the tab of the page. The <code class="html-element">title</code> element must reside within the <code class="html-element">head</code> element. Each document can have no more than one <code class="html-element">title</code> element. In most cases, the <code class="html-element">title</code> element is required.
+		</p>
 
-The title should be a standalone title that identifies the document even if it weren’t being viewed in a browser.
+		<p>
+			The title should be a standalone title that identifies the document even if it weren’t being viewed in a browser.
+	</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-title-element”><code class="html-element">title</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-title-element”><code class="html-element">title</code> Element Standard, WHATWG</a>
+		</p>
 
 ### <code class="html-element">base</code> Element
 
