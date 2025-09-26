@@ -13,6 +13,11 @@ main {
 	max-width: 65ch;
 }
 
+hr {
+	margin: auto;
+	max-width: 50%;
+}
+
 h2 {
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
@@ -24,19 +29,27 @@ h2 {
 }
 
 code, pre {
-	font-family: Courier, monospace;
+	font-family: "Courier", monospace;
 }
 
 code {
-	background-color: #ece9e3;
+	/* background-color: #ece9e3; */
 }
 
-.code-html-element::before {
+.html-element {
+	color: #ff0000;
+}
+
+/*.html-element::before {
 	content: '<';
 }
 
-.code-html-element::after {
+.html-element::after {
 	content: '>';
+}*/
+
+.html-attribute {
+	color: #009600;
 }
 
 pre {
