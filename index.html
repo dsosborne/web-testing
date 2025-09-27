@@ -209,110 +209,182 @@
 		</p>
 
 		<h2>Sections</h2>
+		
+		<h3><code class="html-element">body</code> Element</h3>
 
-The <code class="html-element">body</code> element represents the contents of the document. In conforming documents, there is only one <code class="html-element">body</code> element. The <code class="html-attribute">document.body</code> IDL attribute provides scripts with easy access to a document’s <code class="code-html-element">body</code> element.
+		<p>
+			The <code class="html-element">body</code> element represents the contents of the document. In conforming documents, there is only one <code class="html-element">body</code> element. The <code class="html-attribute">document.body</code> IDL attribute provides scripts with easy access to a document’s <code class="code-html-element">body</code> element.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-body-element”><code class="html-element">body</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-body-element”><code class="html-element">body</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">article</code> Element</h3>
 
-The <code class="html-element">article</code> element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+		<p>
+			The <code class="html-element">article</code> element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+		</p>
 
-When <code class="html-element">article</code> elements are nested, the inner <code class="html-element">article</code> elements represent articles that are in principle related to the contents of the outer <code class="html-element">article</code>. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as <code class="html-element">article</code> elements nested within the <code class="html-element">article</code> element for the blog entry.
+		<p>
+			When <code class="html-element">article</code> elements are nested, the inner <code class="html-element">article</code> elements represent articles that are in principle related to the contents of the outer <code class="html-element">article</code>. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as <code class="html-element">article</code> elements nested within the <code class="html-element">article</code> element for the blog entry.
+		</p>
 
-Author information associated with an <code class="html-element">article</code> element (q.v. the <code class="html-element">address</code> element) does not apply to nested <code class="html-element">article</code> elements.
+		<p>
+			Author information associated with an <code class="html-element">article</code> element (q.v. the <code class="html-element">address</code> element) does not apply to nested <code class="html-element">article</code> elements.
+		</p>
 
-When the main content of the page (i.e. excluding footers, headers, navigation blocks, and sidebars) is all one single self-contained composition, that content may be marked with an <code class="html-element">article</code>, but it is technically redundant in that case (since it’s self-evident that the page is a single composition, as it is a single document).
+		<p>
+			When the main content of the page (i.e. excluding footers, headers, navigation blocks, and sidebars) is all one single self-contained composition, that content may be marked with an <code class="html-element">article</code>, but it is technically redundant in that case (since it’s self-evident that the page is a single composition, as it is a single document).
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-article-element”><code class="html-element">article</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-article-element”><code class="html-element">article</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">section</code> Element</h3>
 
-The <code class="html-element">section</code> element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content, typically with a heading. Examples of sections would be chapters, the various tabbed pages in a tabbed dialog box, or the numbered sections of a thesis. A web site’s home page could be split into sections for an introduction, news items, and contact information.
+		<p>
+			The <code class="html-element">section</code> element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content, typically with a heading. Examples of sections would be chapters, the various tabbed pages in a tabbed dialog box, or the numbered sections of a thesis. A web site’s home page could be split into sections for an introduction, news items, and contact information.
+		</p>
 
-Authors are encouraged to use the <code class="html-element">article</code> element instead of the <code class="html-element">section</code> element when it would make sense to syndicate the contents of the element.
+		<p>
+			Authors are encouraged to use the <code class="html-element">article</code> element instead of the <code class="html-element">section</code> element when it would make sense to syndicate the contents of the element.
+		</p>
 
-The <code class="html-element">section</code> element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the <code class="html-element">div</code> element instead. A general rule is that the <code class="html-element">section</code> element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.
+		<p>
+			The <code class="html-element">section</code> element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the <code class="html-element">div</code> element instead. A general rule is that the <code class="html-element">section</code> element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-section-element”><code class="html-element">section</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-section-element”><code class="html-element">section</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">nav</code> Element</h3>
 
-The <code class="html-element">nav</code> element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
+		<p>
+			The <code class="html-element">nav</code> element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
+		</p>
 
-Not all groups of links on a page need to be in a <code class="html-element">nav</code> element — the element is primarily intended for sections that consist of major navigation blocks. In particular, it is common for footers to have a short list of links to various pages of a site, such as the terms of service, the home page, and a copyright page. The <code class="html-element">footer</code> element alone is sufficient for such cases; while a <code class="code-html-element">nav</code> element can be used in such cases, it is usually unnecessary.
+		<p>
+			Not all groups of links on a page need to be in a <code class="html-element">nav</code> element — the element is primarily intended for sections that consist of major navigation blocks. In particular, it is common for footers to have a short list of links to various pages of a site, such as the terms of service, the home page, and a copyright page. The <code class="html-element">footer</code> element alone is sufficient for such cases; while a <code class="code-html-element">nav</code> element can be used in such cases, it is usually unnecessary.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-nav-element”><code class="html-element">nav</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-nav-element”><code class="html-element">nav</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">aside</code> Element</h3>
 
-The <code class="html-element">aside</code> element represents a section of a page that consists of content that is tangentially related to the content around the <code class="html-element">aside</code> element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+		<p>
+			The <code class="html-element">aside</code> element represents a section of a page that consists of content that is tangentially related to the content around the <code class="html-element">aside</code> element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+		</p>
 
-The element can be used for typographical effects like pull quotes or sidebars, for advertising, for groups of <code class="html-element">nav</code> elements, and for other content that is considered separate from the main content of the page.
+		<p>
+			The element can be used for typographical effects like pull quotes or sidebars, for advertising, for groups of <code class="html-element">nav</code> elements, and for other content that is considered separate from the main content of the page.
+		</p>
 
-It’s not appropriate to use the <code class="html-element">aside</code> element just for parentheticals, since those are part of the main flow of the document.
+		<p>
+			It’s not appropriate to use the <code class="html-element">aside</code> element just for parentheticals, since those are part of the main flow of the document.
+		</p>
 
-<aside>
-	This is text inside of the <code class="html-element">aside</code> element. Use this to check the formatting, look, and feel of this section of text. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
-</aside>
+		<aside>
+			This is text inside of the <code class="html-element">aside</code> element. Use this to check the formatting, look, and feel of this section of text. Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements.
+		</aside>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-aside-element”><code class="html-element">aside</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-aside-element”><code class="html-element">aside</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> Elements</h3>
 
-The <code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> elements represent headings for their sections. The semantics and meaning of these elements are defined in the section on headings and outlines. These elements have a heading level given by the number in their name. The heading level corresponds to the levels of nested sections. The <code class="html-element">h1</code> element is for a top-level section, <code class="html-element">h2</code> for a subsection, <code class="html-element">h3</code> for a sub-subsection, and so on.
+		<p>
+			The <code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> elements represent headings for their sections. The semantics and meaning of these elements are defined in the section on headings and outlines. These elements have a heading level given by the number in their name. The heading level corresponds to the levels of nested sections. The <code class="html-element">h1</code> element is for a top-level section, <code class="html-element">h2</code> for a subsection, <code class="html-element">h3</code> for a sub-subsection, and so on.
+		</p>
 
-<h1>Heading 1 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h1>
+		<h1>Heading 1 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h1>
 
-<h2>Heading 2 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h2>
+		<h2>Heading 2 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h2>
 
-<h3>Heading 3 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h3>
+		<h3>Heading 3 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h3>
 
-<h4>Heading 4 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h4>
+		<h4>Heading 4 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h4>
 
-<h5>Heading 5 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h5>
+		<h5>Heading 5 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h5>
 
-<h6>Heading 6 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h6>
+		<h6>Heading 6 - Test the font size, font weight, font style, special characters, kerning, tracking, line length, line spacing, mood, feel, legibility, readability, and any other requirements</h6>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements”><code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements”><code class="html-element">h1</code>, <code class="html-element">h2</code>, <code class="html-element">h3</code>, <code class="html-element">h4</code>, <code class="html-element">h5</code>, and <code class="html-element">h6</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">hgroup</code> Element</h3>
 
-The <code class="html-element">hgroup</code> element represents a heading and related content. The element may be used to group an <code class="html-element">h1</code>–<code class="html-element">h6</code> element with one or more <code class="html-element">p</code> elements containing content representing a subheading, alternative title, or tagline.
+		<p>
+			The <code class="html-element">hgroup</code> element represents a heading and related content. The element may be used to group an <code class="html-element">h1</code>–<code class="html-element">h6</code> element with one or more <code class="html-element">p</code> elements containing content representing a subheading, alternative title, or tagline.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-hgroup-element”><code class="html-element">hgroup</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-hgroup-element”><code class="html-element">hgroup</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">header</code> Element</h3>
 
-The <code class="html-element">header</code> element represents a group of introductory or navigational aids. A <code class="code-html-element">header</code> element is intended to usually contain a heading (an <code class="html-element">h1</code>–<code class="html-element">h6</code> element or an <code class="html-element">hgroup</code> element), but this is not required. The <code class="html-element">header</code> element can also be used to wrap a section’s table of contents, a search form, or any relevant logos.
+		<p>
+			The <code class="html-element">header</code> element represents a group of introductory or navigational aids. A <code class="code-html-element">header</code> element is intended to usually contain a heading (an <code class="html-element">h1</code>–<code class="html-element">h6</code> element or an <code class="html-element">hgroup</code> element), but this is not required. The <code class="html-element">header</code> element can also be used to wrap a section’s table of contents, a search form, or any relevant logos.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-header-element”><code class="html-element">header</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-header-element”><code class="html-element">header</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">footer</code> Element</h3>
 
-The <code class="html-element">footer</code> element represents a footer for its nearest ancestor sectioning content element, or for the <code class="html-element">body</code> element if there is no such ancestor. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+		<p>
+			The <code class="html-element">footer</code> element represents a footer for its nearest ancestor sectioning content element, or for the <code class="html-element">body</code> element if there is no such ancestor. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+		</p>
 
-When the <code class="html-element">footer</code> element contains entire sections, they represent appendices, indices, long colophons, verbose license agreements, and other such content.
+		<p>
+			When the <code class="html-element">footer</code> element contains entire sections, they represent appendices, indices, long colophons, verbose license agreements, and other such content.
+		</p>
 
-Contact information for the author or editor of a section belongs in an <code class="html-element">address</code> element, possibly itself inside a <code class="html-element">footer</code>. Bylines and other information that could be suitable for both a <code class="html-element">header</code> or a <code class="html-element">footer</code> can be placed in either (or neither). The primary purpose of these elements is merely to help the author write self-explanatory markup that is easy to maintain and style; they are not intended to impose specific structures on authors.
+		<p>
+			Contact information for the author or editor of a section belongs in an <code class="html-element">address</code> element, possibly itself inside a <code class="html-element">footer</code>. Bylines and other information that could be suitable for both a <code class="html-element">header</code> or a <code class="html-element">footer</code> can be placed in either (or neither). The primary purpose of these elements is merely to help the author write self-explanatory markup that is easy to maintain and style; they are not intended to impose specific structures on authors.
+		</p>
 
-Footers don’t necessarily have to appear at the end of a section, though they usually do. When there is no ancestor sectioning content element, then it applies to the whole page.
+		<p>
+			Footers don’t necessarily have to appear at the end of a section, though they usually do. When there is no ancestor sectioning content element, then it applies to the whole page.
+		</p>
 
-The <code class="html-element">footer</code> element is not itself sectioning content; it doesn’t introduce a new section.
+		<p>
+			The <code class="html-element">footer</code> element is not itself sectioning content; it doesn’t introduce a new section.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-footer-element”><code class="html-element">footer</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-footer-element”><code class="html-element">footer</code> Element Standard, WHATWG</a>
+		</p>
 
----
+		<h3><code class="html-element">address</code> Element</h3>
 
-The <code class="html-element">address</code> element represents the contact information for its nearest <code class="html-element">article</code> or <code class="html-element">body</code> element ancestor. If that is the <code class="html-element">body</code> element, then the contact information applies to the document as a whole.
+		<p>
+			The <code class="html-element">address</code> element represents the contact information for its nearest <code class="html-element">article</code> or <code class="html-element">body</code> element ancestor. If that is the <code class="html-element">body</code> element, then the contact information applies to the document as a whole.
+		</p>
 
-The <code class="html-element">address</code> element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The <code class="html-element">p</code> element is the appropriate element for marking up postal addresses in general.)
+		<p>
+			The <code class="html-element">address</code> element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The <code class="html-element">p</code> element is the appropriate element for marking up postal addresses in general.)
+		</p>
 
-The <code class="html-element">address</code> element must not contain information other than contact information.
+		<p>
+			The <code class="html-element">address</code> element must not contain information other than contact information.
+		</p>
 
-Typically, the <code class="html-element">address</code> element would be included along with other information in a <code class="html-element">footer</code> element.
+		<p>
+			Typically, the <code class="html-element">address</code> element would be included along with other information in a <code class="html-element">footer</code> element.
+		</p>
 
-<a class=“link-external” href=“https://html.spec.whatwg.org/#the-address-element”><code class="html-element">address</code> Element Standard, WHATWG</a>
+		<p>
+			<a class=“link-external” href=“https://html.spec.whatwg.org/#the-address-element”><code class="html-element">address</code> Element Standard, WHATWG</a>
+		</p>
 
 ## Grouping Content
 
